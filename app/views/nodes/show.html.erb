@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Parent:</b>
+  <%= @node.parent %>
+</p>
+
+<p>
+  <b>L child:</b>
+  <%= @node.l_child %>
+</p>
+
+<p>
+  <b>R child:</b>
+  <%= @node.r_child %>
+</p>
+
+<p>
+  <b>Sha:</b>
+  <%= @node.sha %>
+</p>
+
+
+<%= link_to 'Edit', edit_node_path(@node) %> |
+<%= link_to 'Back', nodes_path %>

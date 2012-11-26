@@ -1,0 +1,66 @@
+<h1>Listing leafs</h1>
+
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Lat</th>
+    <th>Lon</th>
+    <th>Alt</th>
+    <th>Sha</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @leafs.each do |leaf| %>
+  <tr>
+    <td><%= leaf.name %></td>
+    <td><%= leaf.lat %></td>
+    <td><%= leaf.lon %></td>
+    <td><%= leaf.alt %></td>
+    <td><%= leaf.sha %></td>
+    <td><%= link_to 'Show', leaf %></td>
+    <td><%= link_to 'Edit', edit_leaf_path(leaf) %></td>
+    <td><%= link_to 'Destroy', leaf, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Leaf', new_leaf_path %>
+
+<h2>Geo-Coordinates</h2>
+<table border="1">
+	<tr>
+		<th>Building</th>
+		<th>Latitude</th>
+		<th>Longitude</th>
+		<th>Altitude</th>
+	</tr>
+	<tr>
+		<td>CMU-SV Building 23</td>
+		<td>37.41014 - 37.41065    </td>
+		<td>-122.05951 - -122.05999</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>CMU - SV Building 19</td>
+		<td>37.41198 - 37.41256    </td>
+		<td>-122.05907 - -122.05890</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Post Office</td>
+		<td>37.41207 - 37.41235    </td>
+		<td>-122.05789 - -122.05769</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Singularity</td>
+		<td>37.41031 - 37.41085    </td>
+		<td>-122.05868 - -122.05804</td>
+		<td>1</td>
+	</tr>
+</table>  
+	

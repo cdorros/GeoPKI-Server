@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  parent: 1
+  l_child: 1
+  r_child: 1
+  sha: 
+
+two:
+  parent: 1
+  l_child: 1
+  r_child: 1
+  sha: 

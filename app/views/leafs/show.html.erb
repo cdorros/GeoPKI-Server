@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @leaf.name %>
+</p>
+
+<p>
+  <b>Lat:</b>
+  <%= @leaf.lat %>
+</p>
+
+<p>
+  <b>Lon:</b>
+  <%= @leaf.lon %>
+</p>
+
+<p>
+  <b>Alt:</b>
+  <%= @leaf.alt %>
+</p>
+
+<p>
+  <b>Sha:</b>
+  <%= @leaf.sha %>
+</p>
+
+
+<%= link_to 'Edit', edit_leaf_path(@leaf) %> |
+<%= link_to 'Back', leafs_path %>
