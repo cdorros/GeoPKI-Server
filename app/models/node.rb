@@ -1,12 +1,7 @@
+require 'Digest'
+
 class Node < ActiveRecord::Base
   attr_accessible :l_child, :parent, :r_child, :sha, :level, :is_right_child
-
-=begin
-def Node.hello
-	puts "hello"
-end
-=end
-
 
   def generate_tree
   	# destroy all nodes
@@ -15,8 +10,7 @@ end
   	# pull in all the leaves and hash them
   	Leaf.all.each do |leaf|
   		@node = Node.new
-  		@node.sha = leaf.sha
-  		#@node.hash = H{leaf.certificate}
+  		@node.sha = Digest::SHA1.file(leaf.certificate.path).hexdigest
   		@node.level = 0
   		@node.save
   	end
@@ -48,6 +42,7 @@ end
 				@parent.r_child = @node_stack.pop().id
 			rescue
 			end
+
 			@parent.level = @current_level
 			# @parent.sha = hash children together to create new hash
 			@parent.save
@@ -57,18 +52,32 @@ end
 		@parents = Node.find_all_by_level(@current_level)  	
 		@children = Node.find_all_by_level(@current_level - 1)
 		@parents.each do |parent|
-			@child = Node.find_by_id(parent.l_child)
-			@child.parent = parent.id
-			@child.is_right_child = false
-			@child.save
+			# update left child
+			@lchild = Node.find_by_id(parent.l_child)
+			@lchild.parent = parent.id
+			@lchild.is_right_child = false
+			@lchild.save
 
+			@rchild = nil
+			# update right child
 			begin
-				@child = Node.find_by_id(parent.r_child)
-				@child.parent = parent.id
-				@child.is_right_child = true
-				@child.save
+				@rchild = Node.find_by_id(parent.r_child)
+				@rchild.parent = parent.id
+				@rchild.is_right_child = true
+				@rchild.save
 			rescue
 			end
+
+			# check if the child is an only child
+			if @rchild == nil
+				# just copy the child's hash up
+				parent.sha = @lchild.sha
+			else
+				# hash the concatenation of the children, H(lchild.sha+rchild.sha)
+				parent.sha = Digest::SHA1.hexdigest @lchild.sha + @rchild.sha
+			end
+
+			parent.save
 		end
 
 		# move to next level
@@ -77,9 +86,9 @@ end
 
 	end
   	# END WHILE LOOP
-  end
-  	# note: root is only object in tree with no parents
+  end # END generate_tree
+  	
 
 
-end
+end # END node class
 
