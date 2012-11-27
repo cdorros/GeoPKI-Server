@@ -17362,3 +17362,1447 @@ Served asset /nodes.js - 200 OK (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-26 19:12:28 -0800
 Served asset /application.js - 200 OK (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateLeafs (20121120022820)
+Migrating to CreateNodes (20121120043859)
+Migrating to ChangeDataTypeForNodeRelations (20121120220742)
+Migrating to AddLevelToNode (20121126005032)
+Migrating to AddCertificateToLeaf (20121127020813)
+Migrating to ModifyCoordinatesOfLeafs (20121127041919)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TEMPORARY TABLE "altered_leafs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "lat" float, "lon" float, "alt" float, "sha" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "certificate_file_name" varchar(255), "certificate_content_type" varchar(255), "certificate_file_size" integer, "certificate_updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "leafs"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "altered_leafs" ("id","name","lat","lon","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at") VALUES (10, 'cmu', 1.0, 2.0, 4.0, 'b243cde0adb013161a6dd0ffa3c911746f47b1a6', '2012-11-27 02:46:56.445407', '2012-11-27 02:46:56.445407', 'login.cmu.edu', 'application/octet-stream', 1501, '2012-11-27 02:46:56.444041')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_leafs" ("id","name","lat","lon","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at") VALUES (11, 'facebook', 3.0, 4.0, 5.0, '8177145c81d12df74e722838a323e8529683cd65', '2012-11-27 03:11:54.255309', '2012-11-27 03:11:54.255309', 'www.facebook.com', 'application/octet-stream', 976, '2012-11-27 03:11:54.251133')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "altered_leafs" ("id","name","lat","lon","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at") VALUES (12, 'amazon', 7.0, 8.0, 9.0, 'ca256a5fc67c9ce5b68687386cfdeb83e292347e', '2012-11-27 03:12:18.068874', '2012-11-27 03:12:18.068874', 'www.amazon.com', 'application/octet-stream', 1222, '2012-11-27 03:12:18.067027')
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "leafs"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "leafs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "lat" lat0, "lon" float, "alt" float, "sha" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "certificate_file_name" varchar(255), "certificate_content_type" varchar(255), "certificate_file_size" integer, "certificate_updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "altered_leafs"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "leafs" ("id","name","lat","lon","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at") VALUES (10, 'cmu', 1.0, 2.0, 4.0, 'b243cde0adb013161a6dd0ffa3c911746f47b1a6', '2012-11-27 02:46:56.445407', '2012-11-27 02:46:56.445407', 'login.cmu.edu', 'application/octet-stream', 1501, '2012-11-27 02:46:56.444041')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "leafs" ("id","name","lat","lon","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at") VALUES (11, 'facebook', 3.0, 4.0, 5.0, '8177145c81d12df74e722838a323e8529683cd65', '2012-11-27 03:11:54.255309', '2012-11-27 03:11:54.255309', 'www.facebook.com', 'application/octet-stream', 976, '2012-11-27 03:11:54.251133')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "leafs" ("id","name","lat","lon","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at") VALUES (12, 'amazon', 7.0, 8.0, 9.0, 'ca256a5fc67c9ce5b68687386cfdeb83e292347e', '2012-11-27 03:12:18.068874', '2012-11-27 03:12:18.068874', 'www.amazon.com', 'application/octet-stream', 1222, '2012-11-27 03:12:18.067027')
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "altered_leafs"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "leafs" ADD "lat1" float
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (1.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateLeafs (20121120022820)
+Migrating to CreateNodes (20121120043859)
+Migrating to ChangeDataTypeForNodeRelations (20121120220742)
+Migrating to AddLevelToNode (20121126005032)
+Migrating to AddCertificateToLeaf (20121127020813)
+Migrating to ModifyCoordinatesOfLeafs (20121127041919)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TEMPORARY TABLE "altered_leafs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "lat0" float, "lon" float, "alt" float, "sha" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "certificate_file_name" varchar(255), "certificate_content_type" varchar(255), "certificate_file_size" integer, "certificate_updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "leafs"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "altered_leafs" ("id","name","lat0","lon","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at") VALUES (10, 'cmu', 1.0, 2.0, 4.0, 'b243cde0adb013161a6dd0ffa3c911746f47b1a6', '2012-11-27 02:46:56.445407', '2012-11-27 02:46:56.445407', 'login.cmu.edu', 'application/octet-stream', 1501, '2012-11-27 02:46:56.444041')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_leafs" ("id","name","lat0","lon","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at") VALUES (11, 'facebook', 3.0, 4.0, 5.0, '8177145c81d12df74e722838a323e8529683cd65', '2012-11-27 03:11:54.255309', '2012-11-27 03:11:54.255309', 'www.facebook.com', 'application/octet-stream', 976, '2012-11-27 03:11:54.251133')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "altered_leafs" ("id","name","lat0","lon","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at") VALUES (12, 'amazon', 7.0, 8.0, 9.0, 'ca256a5fc67c9ce5b68687386cfdeb83e292347e', '2012-11-27 03:12:18.068874', '2012-11-27 03:12:18.068874', 'www.amazon.com', 'application/octet-stream', 1222, '2012-11-27 03:12:18.067027')
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "leafs"[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "leafs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "lat0" float, "lon" float, "alt" float, "sha" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "certificate_file_name" varchar(255), "certificate_content_type" varchar(255), "certificate_file_size" integer, "certificate_updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "altered_leafs"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "leafs" ("id","name","lat0","lon","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at") VALUES (10, 'cmu', 1.0, 2.0, 4.0, 'b243cde0adb013161a6dd0ffa3c911746f47b1a6', '2012-11-27 02:46:56.445407', '2012-11-27 02:46:56.445407', 'login.cmu.edu', 'application/octet-stream', 1501, '2012-11-27 02:46:56.444041')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "leafs" ("id","name","lat0","lon","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at") VALUES (11, 'facebook', 3.0, 4.0, 5.0, '8177145c81d12df74e722838a323e8529683cd65', '2012-11-27 03:11:54.255309', '2012-11-27 03:11:54.255309', 'www.facebook.com', 'application/octet-stream', 976, '2012-11-27 03:11:54.251133')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "leafs" ("id","name","lat0","lon","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at") VALUES (12, 'amazon', 7.0, 8.0, 9.0, 'ca256a5fc67c9ce5b68687386cfdeb83e292347e', '2012-11-27 03:12:18.068874', '2012-11-27 03:12:18.068874', 'www.amazon.com', 'application/octet-stream', 1222, '2012-11-27 03:12:18.067027')
+  [1m[36m (0.6ms)[0m  [1mDROP TABLE "altered_leafs"[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "leafs" ADD "lat1" float
+  [1m[36m (0.3ms)[0m  [1mCREATE TEMPORARY TABLE "altered_leafs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "lat0" float, "lon0" float, "alt" float, "sha" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "certificate_file_name" varchar(255), "certificate_content_type" varchar(255), "certificate_file_size" integer, "certificate_updated_at" datetime, "lat1" float) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "leafs"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_leafs" ("id","name","lat0","lon0","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at","lat1") VALUES (10, 'cmu', 1.0, 2.0, 4.0, 'b243cde0adb013161a6dd0ffa3c911746f47b1a6', '2012-11-27 02:46:56.445407', '2012-11-27 02:46:56.445407', 'login.cmu.edu', 'application/octet-stream', 1501, '2012-11-27 02:46:56.444041', NULL)[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "altered_leafs" ("id","name","lat0","lon0","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at","lat1") VALUES (11, 'facebook', 3.0, 4.0, 5.0, '8177145c81d12df74e722838a323e8529683cd65', '2012-11-27 03:11:54.255309', '2012-11-27 03:11:54.255309', 'www.facebook.com', 'application/octet-stream', 976, '2012-11-27 03:11:54.251133', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_leafs" ("id","name","lat0","lon0","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at","lat1") VALUES (12, 'amazon', 7.0, 8.0, 9.0, 'ca256a5fc67c9ce5b68687386cfdeb83e292347e', '2012-11-27 03:12:18.068874', '2012-11-27 03:12:18.068874', 'www.amazon.com', 'application/octet-stream', 1222, '2012-11-27 03:12:18.067027', NULL)[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "leafs"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "leafs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "lat0" float, "lon0" float, "alt" float, "sha" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "certificate_file_name" varchar(255), "certificate_content_type" varchar(255), "certificate_file_size" integer, "certificate_updated_at" datetime, "lat1" float) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "altered_leafs"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "leafs" ("id","name","lat0","lon0","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at","lat1") VALUES (10, 'cmu', 1.0, 2.0, 4.0, 'b243cde0adb013161a6dd0ffa3c911746f47b1a6', '2012-11-27 02:46:56.445407', '2012-11-27 02:46:56.445407', 'login.cmu.edu', 'application/octet-stream', 1501, '2012-11-27 02:46:56.444041', NULL)[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "leafs" ("id","name","lat0","lon0","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at","lat1") VALUES (11, 'facebook', 3.0, 4.0, 5.0, '8177145c81d12df74e722838a323e8529683cd65', '2012-11-27 03:11:54.255309', '2012-11-27 03:11:54.255309', 'www.facebook.com', 'application/octet-stream', 976, '2012-11-27 03:11:54.251133', NULL)
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "leafs" ("id","name","lat0","lon0","alt","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at","lat1") VALUES (12, 'amazon', 7.0, 8.0, 9.0, 'ca256a5fc67c9ce5b68687386cfdeb83e292347e', '2012-11-27 03:12:18.068874', '2012-11-27 03:12:18.068874', 'www.amazon.com', 'application/octet-stream', 1222, '2012-11-27 03:12:18.067027', NULL)[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "altered_leafs"
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "leafs" ADD "lon1" float[0m
+  [1m[35m (0.3ms)[0m  CREATE TEMPORARY TABLE "altered_leafs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "lat0" float, "lon0" float, "alt0" float, "sha" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "certificate_file_name" varchar(255), "certificate_content_type" varchar(255), "certificate_file_size" integer, "certificate_updated_at" datetime, "lat1" float, "lon1" float) 
+  [1m[36m (0.3ms)[0m  [1mSELECT * FROM "leafs"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "altered_leafs" ("id","name","lat0","lon0","alt0","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at","lat1","lon1") VALUES (10, 'cmu', 1.0, 2.0, 4.0, 'b243cde0adb013161a6dd0ffa3c911746f47b1a6', '2012-11-27 02:46:56.445407', '2012-11-27 02:46:56.445407', 'login.cmu.edu', 'application/octet-stream', 1501, '2012-11-27 02:46:56.444041', NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_leafs" ("id","name","lat0","lon0","alt0","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at","lat1","lon1") VALUES (11, 'facebook', 3.0, 4.0, 5.0, '8177145c81d12df74e722838a323e8529683cd65', '2012-11-27 03:11:54.255309', '2012-11-27 03:11:54.255309', 'www.facebook.com', 'application/octet-stream', 976, '2012-11-27 03:11:54.251133', NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "altered_leafs" ("id","name","lat0","lon0","alt0","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at","lat1","lon1") VALUES (12, 'amazon', 7.0, 8.0, 9.0, 'ca256a5fc67c9ce5b68687386cfdeb83e292347e', '2012-11-27 03:12:18.068874', '2012-11-27 03:12:18.068874', 'www.amazon.com', 'application/octet-stream', 1222, '2012-11-27 03:12:18.067027', NULL, NULL)
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "leafs"[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "leafs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "lat0" float, "lon0" float, "alt0" float, "sha" blob, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "certificate_file_name" varchar(255), "certificate_content_type" varchar(255), "certificate_file_size" integer, "certificate_updated_at" datetime, "lat1" float, "lon1" float) 
+  [1m[36m (0.2ms)[0m  [1mSELECT * FROM "altered_leafs"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "leafs" ("id","name","lat0","lon0","alt0","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at","lat1","lon1") VALUES (10, 'cmu', 1.0, 2.0, 4.0, 'b243cde0adb013161a6dd0ffa3c911746f47b1a6', '2012-11-27 02:46:56.445407', '2012-11-27 02:46:56.445407', 'login.cmu.edu', 'application/octet-stream', 1501, '2012-11-27 02:46:56.444041', NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "leafs" ("id","name","lat0","lon0","alt0","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at","lat1","lon1") VALUES (11, 'facebook', 3.0, 4.0, 5.0, '8177145c81d12df74e722838a323e8529683cd65', '2012-11-27 03:11:54.255309', '2012-11-27 03:11:54.255309', 'www.facebook.com', 'application/octet-stream', 976, '2012-11-27 03:11:54.251133', NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "leafs" ("id","name","lat0","lon0","alt0","sha","created_at","updated_at","certificate_file_name","certificate_content_type","certificate_file_size","certificate_updated_at","lat1","lon1") VALUES (12, 'amazon', 7.0, 8.0, 9.0, 'ca256a5fc67c9ce5b68687386cfdeb83e292347e', '2012-11-27 03:12:18.068874', '2012-11-27 03:12:18.068874', 'www.amazon.com', 'application/octet-stream', 1222, '2012-11-27 03:12:18.067027', NULL, NULL)
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "altered_leafs"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "leafs" ADD "alt1" float
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121127041919')[0m
+  [1m[35m (16.8ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/nodes" for 127.0.0.1 at 2012-11-26 20:27:17 -0800
+Connecting to database specified by database.yml
+Processing by NodesController#index as HTML
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" [0m
+  Rendered nodes/index.html.erb within layouts/application (43.1ms)
+Completed 200 OK in 170ms (Views: 116.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-26 20:27:18 -0800
+Served asset /application.css - 200 OK (8ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-26 20:27:18 -0800
+Served asset /leafs.css - 200 OK (5ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-26 20:27:18 -0800
+Served asset /nodes.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-26 20:27:18 -0800
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-26 20:27:18 -0800
+Served asset /leafs.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-26 20:27:18 -0800
+Served asset /jquery_ujs.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-26 20:27:18 -0800
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-26 20:27:18 -0800
+Served asset /nodes.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-26 20:27:18 -0800
+Served asset /application.js - 200 OK (10ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-26 20:27:21 -0800
+Processing by LeafsController#index as HTML
+  [1m[35mLeaf Load (0.3ms)[0m  SELECT "leafs".* FROM "leafs" 
+  Rendered leafs/index.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (undefined method `lat' for #<Leaf:0x007f86b6377aa0>):
+    15: <% @leafs.each do |leaf| %>
+    16:   <tr>
+    17:     <td><%= leaf.name %></td>
+    18:     <td><%= leaf.lat %></td>
+    19:     <td><%= leaf.lon %></td>
+    20:     <td><%= leaf.alt %></td>
+    21:     <td><%= leaf.sha %></td>
+  app/views/leafs/index.html.erb:18:in `block in _app_views_leafs_index_html_erb__1945235906571498130_70108258777340'
+  app/views/leafs/index.html.erb:15:in `each'
+  app/views/leafs/index.html.erb:15:in `_app_views_leafs_index_html_erb__1945235906571498130_70108258777340'
+  app/controllers/leafs_controller.rb:7:in `index'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (33.0ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (45.9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-26 20:32:57 -0800
+Processing by LeafsController#index as HTML
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  Rendered leafs/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined method `lat' for #<Leaf:0x007f86b61f68e8>):
+    15: <% @leafs.each do |leaf| %>
+    16:   <tr>
+    17:     <td><%= leaf.name %></td>
+    18:     <td><%= leaf.lat %></td>
+    19:     <td><%= leaf.lon %></td>
+    20:     <td><%= leaf.alt %></td>
+    21:     <td><%= leaf.sha %></td>
+  app/views/leafs/index.html.erb:18:in `block in _app_views_leafs_index_html_erb__1945235906571498130_70108258777340'
+  app/views/leafs/index.html.erb:15:in `each'
+  app/views/leafs/index.html.erb:15:in `_app_views_leafs_index_html_erb__1945235906571498130_70108258777340'
+  app/controllers/leafs_controller.rb:7:in `index'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.1ms)
+
+
+Started GET "/leafs/47" for 127.0.0.1 at 2012-11-26 20:33:02 -0800
+Processing by LeafsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[35mLeaf Load (0.3ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "47"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Leaf with id=47):
+  app/controllers/leafs_controller.rb:16:in `show'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.4ms)
+
+
+Started GET "/leafs/1" for 127.0.0.1 at 2012-11-26 20:33:05 -0800
+Processing by LeafsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Leaf with id=1):
+  app/controllers/leafs_controller.rb:16:in `show'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.6ms)
+
+
+Started GET "/leafs/10" for 127.0.0.1 at 2012-11-26 20:33:11 -0800
+Processing by LeafsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mLeaf Load (0.1ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered leafs/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `lat' for #<Leaf:0x007f86b753e338>):
+    7: 
+    8: <p>
+    9:   <b>Lat:</b>
+    10:   <%= @leaf.lat %>
+    11: </p>
+    12: 
+    13: <p>
+  app/views/leafs/show.html.erb:10:in `_app_views_leafs_show_html_erb___526122592157778997_70108289031420'
+  app/controllers/leafs_controller.rb:18:in `show'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.8ms)
+
+
+Started GET "/leafs/10.json" for 127.0.0.1 at 2012-11-26 20:33:17 -0800
+Processing by LeafsController#show as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mLeaf Load (0.1ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "10"]]
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/leafs/10.xml" for 127.0.0.1 at 2012-11-26 20:33:42 -0800
+Processing by LeafsController#show as XML
+  Parameters: {"id"=>"10"}
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "10"]]
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/leafs/10" for 127.0.0.1 at 2012-11-26 20:35:25 -0800
+Processing by LeafsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  Rendered leafs/show.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `lat' for #<Leaf:0x007f86b6032048>):
+    7: 
+    8: <p>
+    9:   <b>Lat:</b>
+    10:   <%= @leaf.lat %>
+    11: </p>
+    12: 
+    13: <p>
+  app/views/leafs/show.html.erb:10:in `_app_views_leafs_show_html_erb___526122592157778997_70108289031420'
+  app/controllers/leafs_controller.rb:18:in `show'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.7ms)
+
+
+Started GET "/leafs/10" for 127.0.0.1 at 2012-11-26 20:35:26 -0800
+Processing by LeafsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered leafs/show.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `lat' for #<Leaf:0x007f86b61f1370>):
+    7: 
+    8: <p>
+    9:   <b>Lat:</b>
+    10:   <%= @leaf.lat %>
+    11: </p>
+    12: 
+    13: <p>
+  app/views/leafs/show.html.erb:10:in `_app_views_leafs_show_html_erb___526122592157778997_70108289031420'
+  app/controllers/leafs_controller.rb:18:in `show'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.1ms)
+
+
+Started GET "/leafs/10" for 127.0.0.1 at 2012-11-26 20:35:26 -0800
+Processing by LeafsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  Rendered leafs/show.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `lat' for #<Leaf:0x007f86b637cb68>):
+    7: 
+    8: <p>
+    9:   <b>Lat:</b>
+    10:   <%= @leaf.lat %>
+    11: </p>
+    12: 
+    13: <p>
+  app/views/leafs/show.html.erb:10:in `_app_views_leafs_show_html_erb___526122592157778997_70108289031420'
+  app/controllers/leafs_controller.rb:18:in `show'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.5ms)
+
+
+Started GET "/leafs/10" for 127.0.0.1 at 2012-11-26 20:36:29 -0800
+Processing by LeafsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered leafs/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-26 20:36:29 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-26 20:36:29 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-26 20:36:29 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-26 20:36:29 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-26 20:36:29 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-26 20:36:29 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-26 20:36:29 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-26 20:36:29 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-26 20:36:29 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs/10.json" for 127.0.0.1 at 2012-11-26 20:36:39 -0800
+Processing by LeafsController#show as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "10"]]
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-26 21:45:57 -0800
+
+SyntaxError (/Users/cdorros/Dropbox/CMU/COURSES/Fall2012/Netsec/Project/dev/GeoPKI-Server/app/models/leaf.rb:51: syntax error, unexpected '\n', expecting tCOLON2 or '[' or '.'):
+  app/controllers/leafs_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.2ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-26 21:45:59 -0800
+
+NoMethodError (undefined method `key?' for nil:NilClass):
+  actionpack (3.2.9) lib/action_controller/metal/hide_actions.rb:36:in `visible_action?'
+  actionpack (3.2.9) lib/action_controller/metal/hide_actions.rb:18:in `method_for_action'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:14:in `method_for_action'
+  actionpack (3.2.9) lib/action_controller/metal/compatibility.rb:61:in `method_for_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:115:in `process'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.9) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__661087660784857465__call__2950344921172041230__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/cdorros/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/cdorros/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/cdorros/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.7ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-26 21:46:14 -0800
+
+NoMethodError (undefined method `key?' for nil:NilClass):
+  actionpack (3.2.9) lib/action_controller/metal/hide_actions.rb:36:in `visible_action?'
+  actionpack (3.2.9) lib/action_controller/metal/hide_actions.rb:18:in `method_for_action'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:14:in `method_for_action'
+  actionpack (3.2.9) lib/action_controller/metal/compatibility.rb:61:in `method_for_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:115:in `process'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.9) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__661087660784857465__call__2950344921172041230__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/cdorros/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/cdorros/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/cdorros/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.6ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-26 21:46:37 -0800
+
+NoMethodError (undefined method `key?' for nil:NilClass):
+  actionpack (3.2.9) lib/action_controller/metal/hide_actions.rb:36:in `visible_action?'
+  actionpack (3.2.9) lib/action_controller/metal/hide_actions.rb:18:in `method_for_action'
+  actionpack (3.2.9) lib/action_controller/metal/implicit_render.rb:14:in `method_for_action'
+  actionpack (3.2.9) lib/action_controller/metal/compatibility.rb:61:in `method_for_action'
+  actionpack (3.2.9) lib/abstract_controller/base.rb:115:in `process'
+  actionpack (3.2.9) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.9) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.9) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.9) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.9) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.9) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `_run__661087660784857465__call__2950344921172041230__callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.9) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.9) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/cdorros/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/cdorros/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/cdorros/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.9ms)
+
+
+Started GET "/nodes" for 127.0.0.1 at 2012-11-26 21:46:43 -0800
+Processing by NodesController#index as HTML
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" 
+  Rendered nodes/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 37ms (Views: 20.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-26 21:46:43 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-26 21:46:43 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-26 21:46:43 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-26 21:46:43 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-26 21:46:43 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-26 21:46:43 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-26 21:46:43 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-26 21:46:43 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-26 21:46:43 -0800
+Served asset /application.js - 200 OK (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-26 21:53:10 -0800
+Processing by LeafsController#index as HTML
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  Rendered leafs/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 50ms (Views: 21.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-26 21:53:10 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-26 21:53:10 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-26 21:53:10 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-26 21:53:10 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-26 21:53:10 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-26 21:53:10 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-26 21:53:10 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-26 21:53:10 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-26 21:53:10 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-26 21:53:19 -0800
+Processing by LeafsController#index as HTML
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" 
+  Rendered leafs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 46ms (Views: 18.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-26 21:53:19 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-26 21:53:19 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-26 21:53:19 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-26 21:53:19 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-26 21:53:19 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-26 21:53:19 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-26 21:53:19 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-26 21:53:19 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-26 21:53:19 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs/10/edit" for 127.0.0.1 at 2012-11-26 21:53:23 -0800
+Processing by LeafsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mLeaf Load (0.3ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  Rendered leafs/_form.html.erb (18.7ms)
+  Rendered leafs/edit.html.erb within layouts/application (29.4ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (undefined method `lat2' for #<Leaf:0x007f86b6099a90>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :lat1 %><br />
+    24:     <%= f.text_field :lat2 %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :lon0 %><br />
+  app/views/leafs/_form.html.erb:24:in `block in _app_views_leafs__form_html_erb__3460273955508855495_70108278360260'
+  app/views/leafs/_form.html.erb:1:in `_app_views_leafs__form_html_erb__3460273955508855495_70108278360260'
+  app/views/leafs/edit.html.erb:3:in `_app_views_leafs_edit_html_erb___3697367025690033024_70108278240040'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.8ms)
+
+
+Started GET "/leafs/10/edit" for 127.0.0.1 at 2012-11-26 21:53:25 -0800
+Processing by LeafsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mLeaf Load (0.1ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered leafs/_form.html.erb (4.5ms)
+  Rendered leafs/edit.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `lat2' for #<Leaf:0x007f86b72ef118>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :lat1 %><br />
+    24:     <%= f.text_field :lat2 %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :lon0 %><br />
+  app/views/leafs/_form.html.erb:24:in `block in _app_views_leafs__form_html_erb__3460273955508855495_70108278360260'
+  app/views/leafs/_form.html.erb:1:in `_app_views_leafs__form_html_erb__3460273955508855495_70108278360260'
+  app/views/leafs/edit.html.erb:3:in `_app_views_leafs_edit_html_erb___3697367025690033024_70108278240040'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.5ms)
+
+
+Started GET "/leafs/10/edit" for 127.0.0.1 at 2012-11-26 21:53:26 -0800
+Processing by LeafsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  Rendered leafs/_form.html.erb (4.1ms)
+  Rendered leafs/edit.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `lat2' for #<Leaf:0x007f86b4253770>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :lat1 %><br />
+    24:     <%= f.text_field :lat2 %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :lon0 %><br />
+  app/views/leafs/_form.html.erb:24:in `block in _app_views_leafs__form_html_erb__3460273955508855495_70108278360260'
+  app/views/leafs/_form.html.erb:1:in `_app_views_leafs__form_html_erb__3460273955508855495_70108278360260'
+  app/views/leafs/edit.html.erb:3:in `_app_views_leafs_edit_html_erb___3697367025690033024_70108278240040'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.4ms)
+
+
+Started GET "/leafs/10/edit" for 127.0.0.1 at 2012-11-26 21:53:26 -0800
+Processing by LeafsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered leafs/_form.html.erb (4.2ms)
+  Rendered leafs/edit.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `lat2' for #<Leaf:0x007f86b7035da0>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :lat1 %><br />
+    24:     <%= f.text_field :lat2 %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :lon0 %><br />
+  app/views/leafs/_form.html.erb:24:in `block in _app_views_leafs__form_html_erb__3460273955508855495_70108278360260'
+  app/views/leafs/_form.html.erb:1:in `_app_views_leafs__form_html_erb__3460273955508855495_70108278360260'
+  app/views/leafs/edit.html.erb:3:in `_app_views_leafs_edit_html_erb___3697367025690033024_70108278240040'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.1ms)
+
+
+Started GET "/leafs/10/edit" for 127.0.0.1 at 2012-11-26 21:53:27 -0800
+Processing by LeafsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  Rendered leafs/_form.html.erb (4.8ms)
+  Rendered leafs/edit.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `lat2' for #<Leaf:0x007f86b49c4748>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :lat1 %><br />
+    24:     <%= f.text_field :lat2 %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :lon0 %><br />
+  app/views/leafs/_form.html.erb:24:in `block in _app_views_leafs__form_html_erb__3460273955508855495_70108278360260'
+  app/views/leafs/_form.html.erb:1:in `_app_views_leafs__form_html_erb__3460273955508855495_70108278360260'
+  app/views/leafs/edit.html.erb:3:in `_app_views_leafs_edit_html_erb___3697367025690033024_70108278240040'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (40.5ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (51.3ms)
+
+
+Started GET "/leafs/10/edit" for 127.0.0.1 at 2012-11-26 21:53:27 -0800
+Processing by LeafsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered leafs/_form.html.erb (4.5ms)
+  Rendered leafs/edit.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `lat2' for #<Leaf:0x007f86b317cf28>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :lat1 %><br />
+    24:     <%= f.text_field :lat2 %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :lon0 %><br />
+  app/views/leafs/_form.html.erb:24:in `block in _app_views_leafs__form_html_erb__3460273955508855495_70108278360260'
+  app/views/leafs/_form.html.erb:1:in `_app_views_leafs__form_html_erb__3460273955508855495_70108278360260'
+  app/views/leafs/edit.html.erb:3:in `_app_views_leafs_edit_html_erb___3697367025690033024_70108278240040'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.5ms)
+
+
+Started GET "/leafs/10/edit" for 127.0.0.1 at 2012-11-26 21:53:27 -0800
+Processing by LeafsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mLeaf Load (0.1ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  Rendered leafs/_form.html.erb (4.5ms)
+  Rendered leafs/edit.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `lat2' for #<Leaf:0x007f86b6206ce8>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :lat1 %><br />
+    24:     <%= f.text_field :lat2 %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :lon0 %><br />
+  app/views/leafs/_form.html.erb:24:in `block in _app_views_leafs__form_html_erb__3460273955508855495_70108278360260'
+  app/views/leafs/_form.html.erb:1:in `_app_views_leafs__form_html_erb__3460273955508855495_70108278360260'
+  app/views/leafs/edit.html.erb:3:in `_app_views_leafs_edit_html_erb___3697367025690033024_70108278240040'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.1ms)
+
+
+Started GET "/leafs/10/edit" for 127.0.0.1 at 2012-11-26 21:53:27 -0800
+Processing by LeafsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered leafs/_form.html.erb (4.6ms)
+  Rendered leafs/edit.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `lat2' for #<Leaf:0x007f86b3b8ff60>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :lat1 %><br />
+    24:     <%= f.text_field :lat2 %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :lon0 %><br />
+  app/views/leafs/_form.html.erb:24:in `block in _app_views_leafs__form_html_erb__3460273955508855495_70108278360260'
+  app/views/leafs/_form.html.erb:1:in `_app_views_leafs__form_html_erb__3460273955508855495_70108278360260'
+  app/views/leafs/edit.html.erb:3:in `_app_views_leafs_edit_html_erb___3697367025690033024_70108278240040'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.4ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-26 21:53:59 -0800
+Processing by LeafsController#index as HTML
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  Rendered leafs/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-26 21:53:59 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-26 21:53:59 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-26 21:53:59 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-26 21:53:59 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-26 21:53:59 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-26 21:53:59 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-26 21:53:59 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-26 21:53:59 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-26 21:53:59 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs/10/edit" for 127.0.0.1 at 2012-11-26 21:54:01 -0800
+Processing by LeafsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered leafs/_form.html.erb (10.2ms)
+  Rendered leafs/edit.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-26 21:54:01 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-26 21:54:01 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-26 21:54:01 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-26 21:54:01 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-26 21:54:01 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-26 21:54:01 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-26 21:54:01 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-26 21:54:01 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-26 21:54:01 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs/" for 127.0.0.1 at 2012-11-26 21:54:16 -0800
+Processing by LeafsController#index as HTML
+  [1m[36mLeaf Load (0.3ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  Rendered leafs/index.html.erb within layouts/application (46.2ms)
+Completed 200 OK in 59ms (Views: 56.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-26 21:54:16 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-26 21:54:16 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-26 21:54:16 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-26 21:54:16 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-26 21:54:16 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-26 21:54:16 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-26 21:54:16 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-26 21:54:16 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-26 21:54:16 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started PUT "/leafs/10" for 127.0.0.1 at 2012-11-26 21:55:05 -0800
+Processing by LeafsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"82kWdBi1A9tsuvIE4fDEL6wzGPwQnY3Q5BGcJmKqyVg=", "leaf"=>{"name"=>"cmu", "lat0"=>"37.41014", "lat1"=>"37.41065", "lon0"=>"-122.05951", "lon1"=>"-122.05999", "alt0"=>"0", "alt1"=>"10", "certificate"=>#<ActionDispatch::Http::UploadedFile:0x007f86b630fcc0 @original_filename="login.cmu.edu", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"leaf[certificate]\"; filename=\"login.cmu.edu\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/21/bjhxjb7x4tq1v9h46tfrp8b40000gn/T/RackMultipart20121126-17752-1tyoqjj>>}, "commit"=>"Update Leaf", "id"=>"10"}
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "10"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.4ms)[0m  UPDATE "leafs" SET "lat0" = 37.41014, "lat1" = 37.41065, "lon0" = -122.05951, "lon1" = -122.05999, "alt0" = 0.0, "alt1" = 10.0, "certificate_updated_at" = '2012-11-27 05:55:05.727014', "updated_at" = '2012-11-27 05:55:05.730567' WHERE "leafs"."id" = 10
+[paperclip] Saving attachments.
+[paperclip] deleting /Users/cdorros/Dropbox/CMU/COURSES/Fall2012/Netsec/Project/dev/GeoPKI-Server/public/system/leafs/certificates/000/000/010/original/login.cmu.edu
+  [1m[36m (33.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/leafs/10
+Completed 302 Found in 107ms (ActiveRecord: 37.2ms)
+
+
+Started GET "/leafs/10" for 127.0.0.1 at 2012-11-26 21:55:05 -0800
+Processing by LeafsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mLeaf Load (0.4ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered leafs/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 20ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:05 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:05 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:05 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:05 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:05 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:05 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:05 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:05 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:05 -0800
+Served asset /application.js - 200 OK (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/leafs/" for 127.0.0.1 at 2012-11-26 21:55:30 -0800
+Processing by LeafsController#index as HTML
+  [1m[36mLeaf Load (0.3ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  Rendered leafs/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:30 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:30 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:30 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:30 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:30 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:30 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:30 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:30 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:30 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs/11/edit" for 127.0.0.1 at 2012-11-26 21:55:33 -0800
+Processing by LeafsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "11"]]
+  Rendered leafs/_form.html.erb (6.9ms)
+  Rendered leafs/edit.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:33 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:33 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:33 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:33 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:33 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:33 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:33 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:33 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:33 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started PUT "/leafs/11" for 127.0.0.1 at 2012-11-26 21:55:36 -0800
+Processing by LeafsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"82kWdBi1A9tsuvIE4fDEL6wzGPwQnY3Q5BGcJmKqyVg=", "leaf"=>{"name"=>"facebook", "lat0"=>"3.0", "lat1"=>"234", "lon0"=>"4.0", "lon1"=>"24", "alt0"=>"5.0", "alt1"=>"2343"}, "commit"=>"Update Leaf", "id"=>"11"}
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "11"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mUPDATE "leafs" SET "lat1" = 234.0, "lon1" = 24.0, "alt1" = 2343.0, "updated_at" = '2012-11-27 05:55:36.995704' WHERE "leafs"."id" = 11[0m
+[paperclip] Saving attachments.
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/leafs/11
+Completed 302 Found in 9ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/leafs/11" for 127.0.0.1 at 2012-11-26 21:55:37 -0800
+Processing by LeafsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mLeaf Load (0.3ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "11"]]
+  Rendered leafs/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:37 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:37 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:37 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:37 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:37 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:37 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:37 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:37 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:37 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-26 21:55:38 -0800
+Processing by LeafsController#index as HTML
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" 
+  Rendered leafs/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:38 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:38 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:38 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:38 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:38 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:38 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:38 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:38 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:38 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs/12/edit" for 127.0.0.1 at 2012-11-26 21:55:40 -0800
+Processing by LeafsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "12"]]
+  Rendered leafs/_form.html.erb (9.7ms)
+  Rendered leafs/edit.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:40 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:40 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:40 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:40 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:40 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:40 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:40 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:40 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:40 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started PUT "/leafs/12" for 127.0.0.1 at 2012-11-26 21:55:45 -0800
+Processing by LeafsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"82kWdBi1A9tsuvIE4fDEL6wzGPwQnY3Q5BGcJmKqyVg=", "leaf"=>{"name"=>"amazon", "lat0"=>"7.0", "lat1"=>"234", "lon0"=>"8.0", "lon1"=>"234", "alt0"=>"9.0", "alt1"=>"-2343"}, "commit"=>"Update Leaf", "id"=>"12"}
+  [1m[35mLeaf Load (0.1ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "12"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "leafs" SET "lat1" = 234.0, "lon1" = 234.0, "alt1" = -2343.0, "updated_at" = '2012-11-27 05:55:45.197040' WHERE "leafs"."id" = 12
+[paperclip] Saving attachments.
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/leafs/12
+Completed 302 Found in 8ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/leafs/12" for 127.0.0.1 at 2012-11-26 21:55:45 -0800
+Processing by LeafsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mLeaf Load (2.3ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "12"]]
+  Rendered leafs/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 30ms (Views: 22.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:45 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:45 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:45 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:45 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:45 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:45 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:45 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:45 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:45 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-26 21:55:47 -0800
+Processing by LeafsController#index as HTML
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  Rendered leafs/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:47 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:47 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:47 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-26 21:55:47 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:47 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:47 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:47 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:47 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-26 21:55:47 -0800
+Served asset /application.js - 200 OK (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml

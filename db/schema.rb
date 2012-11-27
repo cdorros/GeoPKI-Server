@@ -11,13 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121127020813) do
+ActiveRecord::Schema.define(:version => 20121127041919) do
 
   create_table "leafs", :force => true do |t|
     t.string   "name"
-    t.float    "lat"
-    t.float    "lon"
-    t.float    "alt"
+    t.float    "lat0"
+    t.float    "lon0"
+    t.float    "alt0"
     t.binary   "sha"
     t.datetime "created_at",               :null => false
     t.datetime "updated_at",               :null => false
@@ -25,6 +25,9 @@ ActiveRecord::Schema.define(:version => 20121127020813) do
     t.string   "certificate_content_type"
     t.integer  "certificate_file_size"
     t.datetime "certificate_updated_at"
+    t.float    "lat1"
+    t.float    "lon1"
+    t.float    "alt1"
   end
 
   create_table "nodes", :force => true do |t|

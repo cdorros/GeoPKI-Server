@@ -3,9 +3,12 @@
 <table border="1">
   <tr>
     <th>Name</th>
-    <th>Lat</th>
-    <th>Lon</th>
-    <th>Alt</th>
+    <th>Lat0</th>
+    <th>Lat1</th>
+    <th>Lon0</th>
+    <th>Lon1</th>
+    <th>Alt0</th>
+    <th>Alt1</th>
     <th>Sha</th>
     <th></th>
     <th></th>
@@ -15,9 +18,12 @@
 <% @leafs.each do |leaf| %>
   <tr>
     <td><%= leaf.name %></td>
-    <td><%= leaf.lat %></td>
-    <td><%= leaf.lon %></td>
-    <td><%= leaf.alt %></td>
+    <td><%= leaf.lat0 %></td>
+    <td><%= leaf.lat1 %></td>
+    <td><%= leaf.lon0 %></td>
+    <td><%= leaf.lon1 %></td>
+    <td><%= leaf.alt0 %></td>
+    <td><%= leaf.alt1 %></td>
     <td><%= leaf.sha %></td>
     <td><%= link_to 'Show', leaf %></td>
     <td><%= link_to 'Edit', edit_leaf_path(leaf) %></td>
