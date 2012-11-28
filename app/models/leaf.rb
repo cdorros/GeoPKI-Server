@@ -5,6 +5,12 @@ class Leaf < ActiveRecord::Base
   attr_accessible :alt0, :alt1, :lat0, :lat1, :lon0, :lon1, :name, :certificate, :sha
   has_attached_file :certificate
 
+  validates_presence_of :alt0, :alt1, :lat0, :lat1, :lon0, :lon1, :name
+  validates_attachment_presence :certificate
+  validates_attachment_size :certificate, :less_than => 1.megabytes
+  #validates_attachment_content_type :certificate, :content_type => ['application/x-x509-ca-cert']
+  #validates_format_of :certificate_file_name, :with => %r{\.(der)$}i
+
   # add verification here that lon0 < lon1, etc
 
   def find_by_coordinates(lat, lon, alt)

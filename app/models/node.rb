@@ -3,7 +3,54 @@ require 'Digest'
 class Node < ActiveRecord::Base
   attr_accessible :l_child, :parent, :r_child, :sha, :level, :is_right_child
 
-  def generate_tree
+  def self.get_root_node
+  	return Node.find_by_parent(nil)
+  end
+
+
+  def get_intermediate_nodes
+  	@current_node = self
+  	@intermediate_nodes = []
+
+  	# loop until we reach the root
+  	while @current_node.parent != nil
+  		@sibling = @current_node.get_sibling
+
+  		# check if it actually has a sibling
+  		if @sibling
+  			@intermediate_nodes << @sibling
+  		end
+
+  		# if it didn't have siblings, then it must be an only child
+  		# ..since it's not the root
+  		# so, continue...
+
+  		@current_node = Node.find_by_id(@current_node.parent)
+  	end
+
+  	return @intermediate_nodes
+  end
+
+  def get_sibling
+  	@sibling = nil
+
+  	# break if we are at root (orphan)
+  	if self.parent == nil
+  	elsif !(self.is_right_child)
+  		# get the right child if this node is a left child
+  		begin
+  			@sibling = Node.find_by_id(self.parent).r_child
+  		rescue
+  		end
+  	else
+  		# get the left child if this node is a right child
+  		@sibling = Node.find_by_id(self.parent).l_child
+  	end
+  	
+  	return @sibling
+  end # END get_sibling
+
+  def self.generate_tree
   	# destroy all nodes
   	Node.destroy_all
 

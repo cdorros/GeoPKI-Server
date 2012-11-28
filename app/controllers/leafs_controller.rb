@@ -35,6 +35,9 @@ class LeafsController < ApplicationController
   # GET /leafs/1/edit
   def edit
     @leaf = Leaf.find(params[:id])
+
+    # update the MHT
+    Node.generate_tree
   end
 
   # POST /leafs
@@ -46,6 +49,9 @@ class LeafsController < ApplicationController
       if @leaf.save
         format.html { redirect_to @leaf, notice: 'Leaf was successfully created.' }
         format.json { render json: @leaf, status: :created, location: @leaf }
+
+        # update the MHT
+        Node.generate_tree
       else
         format.html { render action: "new" }
         format.json { render json: @leaf.errors, status: :unprocessable_entity }
@@ -62,6 +68,9 @@ class LeafsController < ApplicationController
       if @leaf.update_attributes(params[:leaf])
         format.html { redirect_to @leaf, notice: 'Leaf was successfully updated.' }
         format.json { head :no_content }
+
+        # update the MHT
+        Node.generate_tree
       else
         format.html { render action: "edit" }
         format.json { render json: @leaf.errors, status: :unprocessable_entity }
@@ -79,5 +88,8 @@ class LeafsController < ApplicationController
       format.html { redirect_to leafs_url }
       format.json { head :no_content }
     end
+
+    # update the MHT
+    Node.generate_tree
   end
 end

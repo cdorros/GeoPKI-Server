@@ -18806,3 +18806,2290 @@ Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-27 17:32:47 -0800
+Connecting to database specified by database.yml
+Processing by LeafsController#index as HTML
+  [1m[36mLeaf Load (0.3ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  Rendered leafs/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 192ms (Views: 137.6ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:32:47 -0800
+Served asset /application.css - 200 OK (17ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:32:47 -0800
+Served asset /leafs.css - 200 OK (3ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:32:47 -0800
+Served asset /nodes.css - 200 OK (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:32:48 -0800
+Served asset /jquery.js - 200 OK (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:32:48 -0800
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:32:48 -0800
+Served asset /jquery_ujs.js - 200 OK (5ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:32:48 -0800
+Served asset /leafs.js - 200 OK (3ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:32:48 -0800
+Served asset /nodes.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:32:48 -0800
+Served asset /application.js - 200 OK (10ms)
+
+
+Started GET "/leafs/new" for 127.0.0.1 at 2012-11-27 17:32:49 -0800
+Processing by LeafsController#new as HTML
+  Rendered leafs/_form.html.erb (22.1ms)
+  Rendered leafs/new.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:32:49 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:32:49 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:32:49 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:32:49 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:32:49 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:32:49 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:32:49 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:32:49 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:32:49 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/leafs" for 127.0.0.1 at 2012-11-27 17:32:51 -0800
+Processing by LeafsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "leaf"=>{"name"=>"", "lat0"=>"", "lat1"=>"", "lon0"=>"", "lon1"=>"", "alt0"=>"", "alt1"=>""}, "commit"=>"Create Leaf"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered leafs/_form.html.erb (8.0ms)
+  Rendered leafs/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 24ms (Views: 19.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:32:51 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:32:51 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:32:51 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:32:51 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:32:51 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:32:51 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:32:51 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:32:51 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:32:51 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/leafs" for 127.0.0.1 at 2012-11-27 17:33:10 -0800
+Processing by LeafsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "leaf"=>{"name"=>"", "lat0"=>"", "lat1"=>"", "lon0"=>"", "lon1"=>"", "alt0"=>"", "alt1"=>""}, "commit"=>"Create Leaf"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered leafs/_form.html.erb (19.0ms)
+  Rendered leafs/new.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 64ms (Views: 30.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:33:10 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:33:10 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:33:10 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:33:10 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:33:10 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:33:10 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:33:10 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:33:10 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:33:10 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/leafs" for 127.0.0.1 at 2012-11-27 17:37:19 -0800
+Processing by LeafsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "leaf"=>{"name"=>"", "lat0"=>"", "lat1"=>"", "lon0"=>"", "lon1"=>"", "alt0"=>"", "alt1"=>""}, "commit"=>"Create Leaf"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered leafs/_form.html.erb (15.6ms)
+  Rendered leafs/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 62ms (Views: 26.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:37:19 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:37:19 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:37:19 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:37:19 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:37:19 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:37:19 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:37:19 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:37:19 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:37:19 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/leafs" for 127.0.0.1 at 2012-11-27 17:37:30 -0800
+Processing by LeafsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "leaf"=>{"name"=>"", "lat0"=>"", "lat1"=>"", "lon0"=>"", "lon1"=>"", "alt0"=>"", "alt1"=>"", "certificate"=>#<ActionDispatch::Http::UploadedFile:0x007fc667ab0790 @original_filename="login.live.com", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"leaf[certificate]\"; filename=\"login.live.com\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/21/bjhxjb7x4tq1v9h46tfrp8b40000gn/T/RackMultipart20121127-20034-121rui8>>}, "commit"=>"Create Leaf"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered leafs/_form.html.erb (16.6ms)
+  Rendered leafs/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 47ms (Views: 26.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:37:30 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:37:30 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:37:30 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:37:30 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:37:30 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:37:30 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:37:30 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:37:30 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:37:30 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/leafs" for 127.0.0.1 at 2012-11-27 17:37:43 -0800
+Processing by LeafsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "leaf"=>{"name"=>"", "lat0"=>"", "lat1"=>"", "lon0"=>"", "lon1"=>"", "alt0"=>"", "alt1"=>"", "certificate"=>#<ActionDispatch::Http::UploadedFile:0x007fc66455d458 @original_filename="login.live.com", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"leaf[certificate]\"; filename=\"login.live.com\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/21/bjhxjb7x4tq1v9h46tfrp8b40000gn/T/RackMultipart20121127-20034-8gmgc9>>}, "commit"=>"Create Leaf"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered leafs/_form.html.erb (17.4ms)
+  Rendered leafs/new.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 43ms (Views: 30.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:37:43 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:37:43 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:37:43 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:37:43 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:37:43 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:37:43 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:37:43 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:37:43 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:37:43 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/leafs" for 127.0.0.1 at 2012-11-27 17:38:15 -0800
+Processing by LeafsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "leaf"=>{"name"=>"", "lat0"=>"", "lat1"=>"", "lon0"=>"", "lon1"=>"", "alt0"=>"", "alt1"=>"", "certificate"=>#<ActionDispatch::Http::UploadedFile:0x007fc665888e88 @original_filename="login.live.com", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"leaf[certificate]\"; filename=\"login.live.com\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/21/bjhxjb7x4tq1v9h46tfrp8b40000gn/T/RackMultipart20121127-20034-vlmp3h>>}, "commit"=>"Create Leaf"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered leafs/_form.html.erb (23.0ms)
+  Rendered leafs/new.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 57ms (Views: 40.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:38:16 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:38:16 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:38:16 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:38:16 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:38:16 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:38:16 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:38:16 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:38:16 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:38:16 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/leafs" for 127.0.0.1 at 2012-11-27 17:38:41 -0800
+Processing by LeafsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "leaf"=>{"name"=>"", "lat0"=>"", "lat1"=>"", "lon0"=>"", "lon1"=>"", "alt0"=>"", "alt1"=>"", "certificate"=>#<ActionDispatch::Http::UploadedFile:0x007fc665a0cea8 @original_filename="login.live.com", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"leaf[certificate]\"; filename=\"login.live.com\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/21/bjhxjb7x4tq1v9h46tfrp8b40000gn/T/RackMultipart20121127-20034-1i82u7a>>}, "commit"=>"Create Leaf"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered leafs/_form.html.erb (21.4ms)
+  Rendered leafs/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 46ms (Views: 33.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:38:41 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:38:41 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:38:41 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:38:41 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:38:41 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:38:41 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:38:41 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:38:41 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:38:41 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/leafs" for 127.0.0.1 at 2012-11-27 17:38:48 -0800
+Processing by LeafsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "leaf"=>{"name"=>"", "lat0"=>"", "lat1"=>"", "lon0"=>"", "lon1"=>"", "alt0"=>"", "alt1"=>"", "certificate"=>#<ActionDispatch::Http::UploadedFile:0x007fc663cb4630 @original_filename="login.live.com", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"leaf[certificate]\"; filename=\"login.live.com\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/21/bjhxjb7x4tq1v9h46tfrp8b40000gn/T/RackMultipart20121127-20034-zu9jjj>>}, "commit"=>"Create Leaf"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered leafs/_form.html.erb (24.6ms)
+  Rendered leafs/new.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 53ms (Views: 38.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:38:48 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:38:48 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:38:48 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:38:48 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:38:48 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:38:48 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:38:48 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:38:48 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:38:48 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/leafs" for 127.0.0.1 at 2012-11-27 17:39:07 -0800
+Processing by LeafsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "leaf"=>{"name"=>"", "lat0"=>"", "lat1"=>"", "lon0"=>"", "lon1"=>"", "alt0"=>"", "alt1"=>"", "certificate"=>#<ActionDispatch::Http::UploadedFile:0x007fc6648a9760 @original_filename="login.live.com", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"leaf[certificate]\"; filename=\"login.live.com\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/21/bjhxjb7x4tq1v9h46tfrp8b40000gn/T/RackMultipart20121127-20034-1p0zp5o>>}, "commit"=>"Create Leaf"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered leafs/_form.html.erb (14.8ms)
+  Rendered leafs/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 65ms (Views: 27.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:39:08 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:39:08 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:39:08 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:39:08 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:39:08 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:39:08 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:39:08 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:39:08 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:39:08 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/leafs" for 127.0.0.1 at 2012-11-27 17:39:15 -0800
+Processing by LeafsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "leaf"=>{"name"=>"", "lat0"=>"", "lat1"=>"", "lon0"=>"", "lon1"=>"", "alt0"=>"", "alt1"=>"", "certificate"=>#<ActionDispatch::Http::UploadedFile:0x007fc663a2c818 @original_filename="login.live.com", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"leaf[certificate]\"; filename=\"login.live.com\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/21/bjhxjb7x4tq1v9h46tfrp8b40000gn/T/RackMultipart20121127-20034-1a7fepq>>}, "commit"=>"Create Leaf"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered leafs/_form.html.erb (15.5ms)
+  Rendered leafs/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 42ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:39:15 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:39:15 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:39:15 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:39:15 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:39:15 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:39:15 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:39:15 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:39:15 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:39:15 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/leafs" for 127.0.0.1 at 2012-11-27 17:39:28 -0800
+Processing by LeafsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "leaf"=>{"name"=>"n", "lat0"=>"1", "lat1"=>"2", "lon0"=>"3", "lon1"=>"4", "alt0"=>"5", "alt1"=>"6", "certificate"=>#<ActionDispatch::Http::UploadedFile:0x007fc6645717c8 @original_filename="login.cmu.edu", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"leaf[certificate]\"; filename=\"login.cmu.edu\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/21/bjhxjb7x4tq1v9h46tfrp8b40000gn/T/RackMultipart20121127-20034-ckanw9>>}, "commit"=>"Create Leaf"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered leafs/_form.html.erb (11.4ms)
+  Rendered leafs/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 32ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:39:28 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:39:28 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:39:28 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:39:28 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:39:28 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:39:29 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:39:29 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:39:29 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:39:29 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/leafs" for 127.0.0.1 at 2012-11-27 17:40:45 -0800
+Processing by LeafsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "leaf"=>{"name"=>"n", "lat0"=>"1", "lat1"=>"2", "lon0"=>"3", "lon1"=>"4", "alt0"=>"5", "alt1"=>"6", "certificate"=>#<ActionDispatch::Http::UploadedFile:0x007fc665cc00c8 @original_filename="www.amazon.com", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"leaf[certificate]\"; filename=\"www.amazon.com\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/21/bjhxjb7x4tq1v9h46tfrp8b40000gn/T/RackMultipart20121127-20034-v4q4v5>>}, "commit"=>"Create Leaf"}
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `certificate_content_type`
+  [1m[36mSQL (13.8ms)[0m  [1mINSERT INTO "leafs" ("alt0", "alt1", "certificate_content_type", "certificate_file_name", "certificate_file_size", "certificate_updated_at", "created_at", "lat0", "lat1", "lon0", "lon1", "name", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["alt0", 5.0], ["alt1", 6.0], ["certificate_content_type", "application/octet-stream"], ["certificate_file_name", "www.amazon.com"], ["certificate_file_size", 1222], ["certificate_updated_at", Wed, 28 Nov 2012 01:40:46 UTC +00:00], ["created_at", Wed, 28 Nov 2012 01:40:46 UTC +00:00], ["lat0", 1.0], ["lat1", 2.0], ["lon0", 3.0], ["lon1", 4.0], ["name", "n"], ["sha", nil], ["updated_at", Wed, 28 Nov 2012 01:40:46 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/leafs/13
+Completed 302 Found in 59ms (ActiveRecord: 15.4ms)
+
+
+Started GET "/leafs/13" for 127.0.0.1 at 2012-11-27 17:40:46 -0800
+Processing by LeafsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mLeaf Load (0.4ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  Rendered leafs/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 28ms (Views: 20.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:40:46 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:40:46 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:40:46 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:40:46 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:40:46 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:40:46 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:40:46 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:40:46 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:40:46 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-27 17:40:48 -0800
+Processing by LeafsController#index as HTML
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" 
+  Rendered leafs/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 74ms (Views: 71.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:40:48 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:40:48 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:40:48 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:40:48 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:40:48 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:40:48 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:40:48 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:40:48 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:40:48 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs/new" for 127.0.0.1 at 2012-11-27 17:41:14 -0800
+Processing by LeafsController#new as HTML
+  Rendered leafs/_form.html.erb (6.6ms)
+  Rendered leafs/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:41:14 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:41:14 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:41:14 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:41:14 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:41:14 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:41:14 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:41:14 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:41:14 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:41:14 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/leafs" for 127.0.0.1 at 2012-11-27 17:41:17 -0800
+Processing by LeafsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "leaf"=>{"name"=>"", "lat0"=>"", "lat1"=>"", "lon0"=>"sadfdsafdsf", "lon1"=>"", "alt0"=>"", "alt1"=>""}, "commit"=>"Create Leaf"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered leafs/_form.html.erb (14.6ms)
+  Rendered leafs/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 36ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:41:17 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:41:17 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:41:17 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:41:17 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:41:17 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:41:17 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:41:17 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:41:17 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:41:17 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/leafs" for 127.0.0.1 at 2012-11-27 17:43:50 -0800
+Processing by LeafsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "leaf"=>{"name"=>"name", "lat0"=>"text", "lat1"=>"123", "lon0"=>"456", "lon1"=>"23", "alt0"=>"9", "alt1"=>"9", "certificate"=>#<ActionDispatch::Http::UploadedFile:0x007fc664182d60 @original_filename="www.facebook.com", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"leaf[certificate]\"; filename=\"www.facebook.com\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/21/bjhxjb7x4tq1v9h46tfrp8b40000gn/T/RackMultipart20121127-20034-2hrnes>>}, "commit"=>"Create Leaf"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `certificate_content_type`
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "leafs" ("alt0", "alt1", "certificate_content_type", "certificate_file_name", "certificate_file_size", "certificate_updated_at", "created_at", "lat0", "lat1", "lon0", "lon1", "name", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["alt0", 9.0], ["alt1", 9.0], ["certificate_content_type", "application/octet-stream"], ["certificate_file_name", "www.facebook.com"], ["certificate_file_size", 976], ["certificate_updated_at", Wed, 28 Nov 2012 01:43:50 UTC +00:00], ["created_at", Wed, 28 Nov 2012 01:43:50 UTC +00:00], ["lat0", 0.0], ["lat1", 123.0], ["lon0", 456.0], ["lon1", 23.0], ["name", "name"], ["sha", nil], ["updated_at", Wed, 28 Nov 2012 01:43:50 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/leafs/14
+Completed 302 Found in 30ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/leafs/14" for 127.0.0.1 at 2012-11-27 17:43:50 -0800
+Processing by LeafsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mLeaf Load (0.6ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "14"]]
+  Rendered leafs/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:43:50 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:43:50 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:43:50 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:43:50 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:43:50 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:43:50 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:43:50 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:43:50 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:43:50 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-27 17:43:53 -0800
+Processing by LeafsController#index as HTML
+  [1m[36mLeaf Load (0.4ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  Rendered leafs/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:43:53 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:43:53 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:43:53 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:43:53 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:43:53 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:43:53 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:43:53 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:43:53 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:43:53 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started DELETE "/leafs/13" for 127.0.0.1 at 2012-11-27 17:49:11 -0800
+Processing by LeafsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "id"=>"13"}
+  [1m[35mLeaf Load (0.4ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[paperclip] Scheduling attachments for deletion.
+  [1m[35mSQL (1.1ms)[0m  DELETE FROM "leafs" WHERE "leafs"."id" = ?  [["id", 13]]
+[paperclip] Deleting attachments.
+[paperclip] deleting /Users/cdorros/Dropbox/CMU/COURSES/Fall2012/Netsec/Project/dev/GeoPKI-Server/public/system/leafs/certificates/000/000/013/original/www.amazon.com
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/leafs
+  [1m[35mNode Load (0.4ms)[0m  SELECT "nodes".* FROM "nodes" 
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "nodes" WHERE "nodes"."id" = ?  [["id", 49]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "nodes" WHERE "nodes"."id" = ?[0m  [["id", 50]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "nodes" WHERE "nodes"."id" = ?  [["id", 51]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "nodes" WHERE "nodes"."id" = ?[0m  [["id", 52]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "nodes" WHERE "nodes"."id" = ?  [["id", 53]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "nodes" WHERE "nodes"."id" = ?[0m  [["id", 54]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mLeaf Load (0.3ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 28 Nov 2012 01:49:12 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "d5d894b3c75dc65a37aee2ed5988844357f0d138"], ["updated_at", Wed, 28 Nov 2012 01:49:12 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 28 Nov 2012 01:49:12 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "9c53b1a416f958791bdad028a9fa5d654c5f8152"], ["updated_at", Wed, 28 Nov 2012 01:49:12 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 28 Nov 2012 01:49:12 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "0ffd1163fc5ef2a08d234a04caae5ec2097394e0"], ["updated_at", Wed, 28 Nov 2012 01:49:12 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 28 Nov 2012 01:49:12 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "9c53b1a416f958791bdad028a9fa5d654c5f8152"], ["updated_at", Wed, 28 Nov 2012 01:49:12 UTC +00:00]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 28 Nov 2012 01:49:12 UTC +00:00], ["is_right_child", nil], ["l_child", 58], ["level", 1], ["parent", nil], ["r_child", 57], ["sha", nil], ["updated_at", Wed, 28 Nov 2012 01:49:12 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 28 Nov 2012 01:49:12 UTC +00:00], ["is_right_child", nil], ["l_child", 56], ["level", 1], ["parent", nil], ["r_child", 55], ["sha", nil], ["updated_at", Wed, 28 Nov 2012 01:49:12 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0[0m
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 58 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "nodes" SET "parent" = 59, "is_right_child" = 'f', "updated_at" = '2012-11-28 01:49:12.238565' WHERE "nodes"."id" = 58
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 57 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  UPDATE "nodes" SET "parent" = 59, "is_right_child" = 't', "updated_at" = '2012-11-28 01:49:12.245989' WHERE "nodes"."id" = 57
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "nodes" SET "sha" = x'36313532393934333161656333623464613765333764316164353338333636343531613964386161', "updated_at" = '2012-11-28 01:49:12.249793' WHERE "nodes"."id" = 59[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 56 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "nodes" SET "parent" = 60, "is_right_child" = 'f', "updated_at" = '2012-11-28 01:49:12.255012' WHERE "nodes"."id" = 56[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 55 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "nodes" SET "parent" = 60, "is_right_child" = 't', "updated_at" = '2012-11-28 01:49:12.260381' WHERE "nodes"."id" = 55[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "nodes" SET "sha" = x'39303666366536643565333963333363623532336335653636383566303239353938326638613866', "updated_at" = '2012-11-28 01:49:12.263858' WHERE "nodes"."id" = 60
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 28 Nov 2012 01:49:12 UTC +00:00], ["is_right_child", nil], ["l_child", 60], ["level", 2], ["parent", nil], ["r_child", 59], ["sha", nil], ["updated_at", Wed, 28 Nov 2012 01:49:12 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 2[0m
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 60 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mUPDATE "nodes" SET "parent" = 61, "is_right_child" = 'f', "updated_at" = '2012-11-28 01:49:12.277836' WHERE "nodes"."id" = 60[0m
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 59 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "nodes" SET "parent" = 61, "is_right_child" = 't', "updated_at" = '2012-11-28 01:49:12.286050' WHERE "nodes"."id" = 59[0m
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "nodes" SET "sha" = x'64366530386133343132396236393830646632646330636330303538663863383766316463363833', "updated_at" = '2012-11-28 01:49:12.290816' WHERE "nodes"."id" = 61
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 2
+Completed 302 Found in 286ms (ActiveRecord: 47.7ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-27 17:49:12 -0800
+Processing by LeafsController#index as HTML
+  [1m[36mLeaf Load (0.4ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  Rendered leafs/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 35ms (Views: 31.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:12 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:12 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:12 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:12 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:12 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:12 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:12 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:12 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:12 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started DELETE "/leafs/14" for 127.0.0.1 at 2012-11-27 17:49:13 -0800
+Processing by LeafsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "id"=>"14"}
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "14"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[paperclip] Scheduling attachments for deletion.
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "leafs" WHERE "leafs"."id" = ?  [["id", 14]]
+[paperclip] Deleting attachments.
+[paperclip] deleting /Users/cdorros/Dropbox/CMU/COURSES/Fall2012/Netsec/Project/dev/GeoPKI-Server/public/system/leafs/certificates/000/000/014/original/www.facebook.com
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/leafs
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" 
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "nodes" WHERE "nodes"."id" = ?  [["id", 55]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "nodes" WHERE "nodes"."id" = ?[0m  [["id", 56]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "nodes" WHERE "nodes"."id" = ?  [["id", 57]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "nodes" WHERE "nodes"."id" = ?[0m  [["id", 58]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "nodes" WHERE "nodes"."id" = ?  [["id", 59]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "nodes" WHERE "nodes"."id" = ?[0m  [["id", 60]]
+  [1m[35m (4.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "nodes" WHERE "nodes"."id" = ?  [["id", 61]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mLeaf Load (0.4ms)[0m  SELECT "leafs".* FROM "leafs" 
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 28 Nov 2012 01:49:13 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "d5d894b3c75dc65a37aee2ed5988844357f0d138"], ["updated_at", Wed, 28 Nov 2012 01:49:13 UTC +00:00]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 28 Nov 2012 01:49:13 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "9c53b1a416f958791bdad028a9fa5d654c5f8152"], ["updated_at", Wed, 28 Nov 2012 01:49:13 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 28 Nov 2012 01:49:13 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "0ffd1163fc5ef2a08d234a04caae5ec2097394e0"], ["updated_at", Wed, 28 Nov 2012 01:49:13 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 28 Nov 2012 01:49:13 UTC +00:00], ["is_right_child", nil], ["l_child", 64], ["level", 1], ["parent", nil], ["r_child", 63], ["sha", nil], ["updated_at", Wed, 28 Nov 2012 01:49:13 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 28 Nov 2012 01:49:13 UTC +00:00], ["is_right_child", nil], ["l_child", 62], ["level", 1], ["parent", nil], ["r_child", nil], ["sha", nil], ["updated_at", Wed, 28 Nov 2012 01:49:13 UTC +00:00]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0[0m
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 64 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "nodes" SET "parent" = 65, "is_right_child" = 'f', "updated_at" = '2012-11-28 01:49:13.877703' WHERE "nodes"."id" = 64
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 63 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "nodes" SET "parent" = 65, "is_right_child" = 't', "updated_at" = '2012-11-28 01:49:13.882841' WHERE "nodes"."id" = 63
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "nodes" SET "sha" = x'30393437306534323834666630663236643061643161336462653063616666613430643961626538', "updated_at" = '2012-11-28 01:49:13.886530' WHERE "nodes"."id" = 65[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 62 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "nodes" SET "parent" = 66, "is_right_child" = 'f', "updated_at" = '2012-11-28 01:49:13.891223' WHERE "nodes"."id" = 62[0m
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."id" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "nodes" SET "sha" = x'64356438393462336337356463363561333761656532656435393838383434333537663064313338', "updated_at" = '2012-11-28 01:49:13.897173' WHERE "nodes"."id" = 66[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 28 Nov 2012 01:49:13 UTC +00:00], ["is_right_child", nil], ["l_child", 66], ["level", 2], ["parent", nil], ["r_child", 65], ["sha", nil], ["updated_at", Wed, 28 Nov 2012 01:49:13 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 2
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1[0m
+  [1m[35mNode Load (0.1ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 66 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "nodes" SET "parent" = 67, "is_right_child" = 'f', "updated_at" = '2012-11-28 01:49:13.910879' WHERE "nodes"."id" = 66
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 65 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "nodes" SET "parent" = 67, "is_right_child" = 't', "updated_at" = '2012-11-28 01:49:13.915613' WHERE "nodes"."id" = 65
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "nodes" SET "sha" = x'34616264646431623931343439653737633064646261333733323835353632663137666538633035', "updated_at" = '2012-11-28 01:49:13.919336' WHERE "nodes"."id" = 67[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 2[0m
+Completed 302 Found in 142ms (ActiveRecord: 54.0ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-27 17:49:13 -0800
+Processing by LeafsController#index as HTML
+  [1m[35mLeaf Load (0.3ms)[0m  SELECT "leafs".* FROM "leafs" 
+  Rendered leafs/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:13 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:14 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:14 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:14 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:14 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:14 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:14 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:14 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:14 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-27 17:49:16 -0800
+Processing by LeafsController#index as HTML
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  Rendered leafs/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:16 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:16 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:16 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:16 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:16 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:16 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:16 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:16 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:16 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/nodes" for 127.0.0.1 at 2012-11-27 17:49:21 -0800
+Processing by NodesController#index as HTML
+  [1m[35mNode Load (0.4ms)[0m  SELECT "nodes".* FROM "nodes" 
+  Rendered nodes/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 31ms (Views: 27.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:21 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:21 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:21 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:21 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:21 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:21 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:21 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:21 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:21 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/nodes" for 127.0.0.1 at 2012-11-27 17:49:23 -0800
+Processing by NodesController#index as HTML
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" [0m
+  Rendered nodes/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:23 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:23 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:23 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:23 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:23 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:23 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:23 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:23 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:23 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs/new" for 127.0.0.1 at 2012-11-27 17:49:25 -0800
+Processing by LeafsController#new as HTML
+  Rendered leafs/_form.html.erb (6.3ms)
+  Rendered leafs/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:25 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:25 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:25 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:25 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:25 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:25 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:25 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:25 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:25 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started DELETE "/leafs/12" for 127.0.0.1 at 2012-11-27 17:49:30 -0800
+Processing by LeafsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "id"=>"12"}
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "12"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+[paperclip] Scheduling attachments for deletion.
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "leafs" WHERE "leafs"."id" = ?  [["id", 12]]
+[paperclip] Deleting attachments.
+[paperclip] deleting /Users/cdorros/Dropbox/CMU/COURSES/Fall2012/Netsec/Project/dev/GeoPKI-Server/public/system/leafs/certificates/000/000/012/original/www.amazon.com
+  [1m[36m (10.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/leafs
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" 
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "nodes" WHERE "nodes"."id" = ?  [["id", 62]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "nodes" WHERE "nodes"."id" = ?[0m  [["id", 63]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "nodes" WHERE "nodes"."id" = ?  [["id", 64]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mDELETE FROM "nodes" WHERE "nodes"."id" = ?[0m  [["id", 65]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "nodes" WHERE "nodes"."id" = ?  [["id", 66]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "nodes" WHERE "nodes"."id" = ?[0m  [["id", 67]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mLeaf Load (0.3ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 28 Nov 2012 01:49:30 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "d5d894b3c75dc65a37aee2ed5988844357f0d138"], ["updated_at", Wed, 28 Nov 2012 01:49:30 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 28 Nov 2012 01:49:30 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "9c53b1a416f958791bdad028a9fa5d654c5f8152"], ["updated_at", Wed, 28 Nov 2012 01:49:30 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 28 Nov 2012 01:49:30 UTC +00:00], ["is_right_child", nil], ["l_child", 69], ["level", 1], ["parent", nil], ["r_child", 68], ["sha", nil], ["updated_at", Wed, 28 Nov 2012 01:49:30 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1[0m
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0
+  [1m[36mNode Load (0.1ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 69 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mUPDATE "nodes" SET "parent" = 70, "is_right_child" = 'f', "updated_at" = '2012-11-28 01:49:30.687385' WHERE "nodes"."id" = 69[0m
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 68 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mUPDATE "nodes" SET "parent" = 70, "is_right_child" = 't', "updated_at" = '2012-11-28 01:49:30.693354' WHERE "nodes"."id" = 68[0m
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  UPDATE "nodes" SET "sha" = x'39303666366536643565333963333363623532336335653636383566303239353938326638613866', "updated_at" = '2012-11-28 01:49:30.697841' WHERE "nodes"."id" = 70
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1
+Completed 302 Found in 128ms (ActiveRecord: 41.7ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-27 17:49:30 -0800
+Processing by LeafsController#index as HTML
+  [1m[36mLeaf Load (0.3ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  Rendered leafs/index.html.erb within layouts/application (62.1ms)
+Completed 200 OK in 80ms (Views: 77.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:30 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:30 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:30 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:30 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:30 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:30 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:30 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:30 -0800
+Served asset /nodes.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:30 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/nodes" for 127.0.0.1 at 2012-11-27 17:49:32 -0800
+Processing by NodesController#index as HTML
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" 
+  Rendered nodes/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:32 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:32 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:32 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:32 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:32 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:32 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:32 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:32 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:32 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/nodes" for 127.0.0.1 at 2012-11-27 17:49:33 -0800
+Processing by NodesController#index as HTML
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" [0m
+  Rendered nodes/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:33 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:33 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:33 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:33 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:33 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:33 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:33 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:33 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:33 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs/11/edit" for 127.0.0.1 at 2012-11-27 17:49:36 -0800
+Processing by LeafsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mLeaf Load (0.1ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "11"]]
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "nodes" WHERE "nodes"."id" = ?[0m  [["id", 68]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "nodes" WHERE "nodes"."id" = ?  [["id", 69]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "nodes" WHERE "nodes"."id" = ?[0m  [["id", 70]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mLeaf Load (0.4ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 28 Nov 2012 01:49:36 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "d5d894b3c75dc65a37aee2ed5988844357f0d138"], ["updated_at", Wed, 28 Nov 2012 01:49:36 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 28 Nov 2012 01:49:36 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "9c53b1a416f958791bdad028a9fa5d654c5f8152"], ["updated_at", Wed, 28 Nov 2012 01:49:36 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 28 Nov 2012 01:49:36 UTC +00:00], ["is_right_child", nil], ["l_child", 72], ["level", 1], ["parent", nil], ["r_child", 71], ["sha", nil], ["updated_at", Wed, 28 Nov 2012 01:49:36 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 72 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "nodes" SET "parent" = 73, "is_right_child" = 'f', "updated_at" = '2012-11-28 01:49:36.743077' WHERE "nodes"."id" = 72[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 71 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "nodes" SET "parent" = 73, "is_right_child" = 't', "updated_at" = '2012-11-28 01:49:36.748905' WHERE "nodes"."id" = 71[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "nodes" SET "sha" = x'39303666366536643565333963333363623532336335653636383566303239353938326638613866', "updated_at" = '2012-11-28 01:49:36.753030' WHERE "nodes"."id" = 73
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1
+  Rendered leafs/_form.html.erb (11.7ms)
+  Rendered leafs/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 92ms (Views: 33.4ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:36 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:36 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:36 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:36 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:36 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:36 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:36 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:36 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:36 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started PUT "/leafs/11" for 127.0.0.1 at 2012-11-27 17:49:43 -0800
+Processing by LeafsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "leaf"=>{"name"=>"facebook", "lat0"=>"3.0", "lat1"=>"234.0", "lon0"=>"4.0", "lon1"=>"24.0", "alt0"=>"5.0", "alt1"=>"2343.0", "certificate"=>#<ActionDispatch::Http::UploadedFile:0x007fc6642dbdd8 @original_filename="www.pnc.com", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"leaf[certificate]\"; filename=\"www.pnc.com\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/21/bjhxjb7x4tq1v9h46tfrp8b40000gn/T/RackMultipart20121127-20034-mgevrc>>}, "commit"=>"Update Leaf", "id"=>"11"}
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "11"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mUPDATE "leafs" SET "certificate_file_name" = 'www.pnc.com', "certificate_file_size" = 1565, "certificate_updated_at" = '2012-11-28 01:49:43.776270', "updated_at" = '2012-11-28 01:49:43.779956' WHERE "leafs"."id" = 11[0m
+[paperclip] Saving attachments.
+[paperclip] deleting /Users/cdorros/Dropbox/CMU/COURSES/Fall2012/Netsec/Project/dev/GeoPKI-Server/public/system/leafs/certificates/000/000/011/original/www.facebook.com
+  [1m[35m (9.8ms)[0m  commit transaction
+  [1m[36mNode Load (2.4ms)[0m  [1mSELECT "nodes".* FROM "nodes" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.3ms)[0m  [1mDELETE FROM "nodes" WHERE "nodes"."id" = ?[0m  [["id", 71]]
+  [1m[35m (19.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "nodes" WHERE "nodes"."id" = ?  [["id", 72]]
+  [1m[36m (6.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mDELETE FROM "nodes" WHERE "nodes"."id" = ?[0m  [["id", 73]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36mLeaf Load (0.3ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 28 Nov 2012 01:49:43 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "d5d894b3c75dc65a37aee2ed5988844357f0d138"], ["updated_at", Wed, 28 Nov 2012 01:49:43 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 28 Nov 2012 01:49:43 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "6e91922661a4b4aa4a48b6cdfb276e8969bbaf79"], ["updated_at", Wed, 28 Nov 2012 01:49:43 UTC +00:00]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 28 Nov 2012 01:49:43 UTC +00:00], ["is_right_child", nil], ["l_child", 75], ["level", 1], ["parent", nil], ["r_child", 74], ["sha", nil], ["updated_at", Wed, 28 Nov 2012 01:49:43 UTC +00:00]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 75 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "nodes" SET "parent" = 76, "is_right_child" = 'f', "updated_at" = '2012-11-28 01:49:43.995306' WHERE "nodes"."id" = 75[0m
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mNode Load (0.9ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 74 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mUPDATE "nodes" SET "parent" = 76, "is_right_child" = 't', "updated_at" = '2012-11-28 01:49:44.003082' WHERE "nodes"."id" = 74[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  UPDATE "nodes" SET "sha" = x'66303966393230643933306234363239343361616130386135323535376662656137303734303833', "updated_at" = '2012-11-28 01:49:44.008893' WHERE "nodes"."id" = 76
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1
+Redirected to http://0.0.0.0:3000/leafs/11
+Completed 302 Found in 260ms (ActiveRecord: 70.1ms)
+
+
+Started GET "/leafs/11" for 127.0.0.1 at 2012-11-27 17:49:44 -0800
+Processing by LeafsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "11"]]
+  Rendered leafs/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:44 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:44 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:44 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:44 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:44 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:44 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:44 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:44 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:44 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/nodes" for 127.0.0.1 at 2012-11-27 17:49:46 -0800
+Processing by NodesController#index as HTML
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" 
+  Rendered nodes/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:46 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:46 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:46 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:46 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:46 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:46 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:46 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:46 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:46 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/nodes" for 127.0.0.1 at 2012-11-27 17:49:47 -0800
+Processing by NodesController#index as HTML
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" [0m
+  Rendered nodes/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:47 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:47 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:47 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:47 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:47 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:47 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:47 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:47 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:47 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-27 17:49:49 -0800
+Processing by LeafsController#index as HTML
+  [1m[35mLeaf Load (0.3ms)[0m  SELECT "leafs".* FROM "leafs" 
+  Rendered leafs/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:49 -0800
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:49 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:49 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:49 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:49 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:49 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:49 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:49 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:49 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started DELETE "/leafs/11" for 127.0.0.1 at 2012-11-27 17:49:53 -0800
+Processing by LeafsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "id"=>"11"}
+  [1m[36mLeaf Load (0.1ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "11"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+[paperclip] Scheduling attachments for deletion.
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "leafs" WHERE "leafs"."id" = ?[0m  [["id", 11]]
+[paperclip] Deleting attachments.
+[paperclip] deleting /Users/cdorros/Dropbox/CMU/COURSES/Fall2012/Netsec/Project/dev/GeoPKI-Server/public/system/leafs/certificates/000/000/011/original/www.pnc.com
+  [1m[35m (2.5ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/leafs
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "nodes" WHERE "nodes"."id" = ?[0m  [["id", 74]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "nodes" WHERE "nodes"."id" = ?  [["id", 75]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "nodes" WHERE "nodes"."id" = ?[0m  [["id", 76]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 28 Nov 2012 01:49:53 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "d5d894b3c75dc65a37aee2ed5988844357f0d138"], ["updated_at", Wed, 28 Nov 2012 01:49:53 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0[0m
+Completed 302 Found in 90ms (ActiveRecord: 10.2ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-27 17:49:53 -0800
+Processing by LeafsController#index as HTML
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" 
+  Rendered leafs/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:53 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:53 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:53 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:53 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:53 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:53 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:53 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:53 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:53 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/nodes" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Processing by NodesController#index as HTML
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" [0m
+  Rendered nodes/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/nodes" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Processing by NodesController#index as HTML
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" 
+  Rendered nodes/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:55 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/nodes" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Processing by NodesController#index as HTML
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" [0m
+  Rendered nodes/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/nodes" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Processing by NodesController#index as HTML
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" 
+  Rendered nodes/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:56 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs/new" for 127.0.0.1 at 2012-11-27 17:49:57 -0800
+Processing by LeafsController#new as HTML
+  Rendered leafs/_form.html.erb (6.6ms)
+  Rendered leafs/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:57 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:57 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:57 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:57 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:49:57 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:57 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:57 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:57 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:49:57 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/leafs" for 127.0.0.1 at 2012-11-27 17:50:07 -0800
+Processing by LeafsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "leaf"=>{"name"=>"facebook", "lat0"=>"7", "lat1"=>"8", "lon0"=>"9", "lon1"=>"6", "alt0"=>"5", "alt1"=>"8", "certificate"=>#<ActionDispatch::Http::UploadedFile:0x007fc665d72b10 @original_filename="www.facebook.com", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"leaf[certificate]\"; filename=\"www.facebook.com\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/21/bjhxjb7x4tq1v9h46tfrp8b40000gn/T/RackMultipart20121127-20034-1qbyz8k>>}, "commit"=>"Create Leaf"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `certificate_content_type`
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "leafs" ("alt0", "alt1", "certificate_content_type", "certificate_file_name", "certificate_file_size", "certificate_updated_at", "created_at", "lat0", "lat1", "lon0", "lon1", "name", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["alt0", 5.0], ["alt1", 8.0], ["certificate_content_type", "application/octet-stream"], ["certificate_file_name", "www.facebook.com"], ["certificate_file_size", 976], ["certificate_updated_at", Wed, 28 Nov 2012 01:50:07 UTC +00:00], ["created_at", Wed, 28 Nov 2012 01:50:07 UTC +00:00], ["lat0", 7.0], ["lat1", 8.0], ["lon0", 9.0], ["lon1", 6.0], ["name", "facebook"], ["sha", nil], ["updated_at", Wed, 28 Nov 2012 01:50:07 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" 
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "nodes" WHERE "nodes"."id" = ?  [["id", 77]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mLeaf Load (0.3ms)[0m  SELECT "leafs".* FROM "leafs" 
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 28 Nov 2012 01:50:07 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "d5d894b3c75dc65a37aee2ed5988844357f0d138"], ["updated_at", Wed, 28 Nov 2012 01:50:07 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 28 Nov 2012 01:50:07 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "9c53b1a416f958791bdad028a9fa5d654c5f8152"], ["updated_at", Wed, 28 Nov 2012 01:50:07 UTC +00:00]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 28 Nov 2012 01:50:07 UTC +00:00], ["is_right_child", nil], ["l_child", 79], ["level", 1], ["parent", nil], ["r_child", 78], ["sha", nil], ["updated_at", Wed, 28 Nov 2012 01:50:07 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0[0m
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 79 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "nodes" SET "parent" = 80, "is_right_child" = 'f', "updated_at" = '2012-11-28 01:50:07.946530' WHERE "nodes"."id" = 79
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 78 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "nodes" SET "parent" = 80, "is_right_child" = 't', "updated_at" = '2012-11-28 01:50:07.952610' WHERE "nodes"."id" = 78
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "nodes" SET "sha" = x'39303666366536643565333963333363623532336335653636383566303239353938326638613866', "updated_at" = '2012-11-28 01:50:07.957851' WHERE "nodes"."id" = 80[0m
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1[0m
+Redirected to http://0.0.0.0:3000/leafs/15
+Completed 302 Found in 90ms (ActiveRecord: 19.8ms)
+
+
+Started GET "/leafs/15" for 127.0.0.1 at 2012-11-27 17:50:07 -0800
+Processing by LeafsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "15"]]
+  Rendered leafs/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:50:08 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:50:08 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:50:08 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:50:08 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:50:08 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:50:08 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:50:08 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:50:08 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:50:08 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/nodes" for 127.0.0.1 at 2012-11-27 17:50:09 -0800
+Processing by NodesController#index as HTML
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" [0m
+  Rendered nodes/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:50:09 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:50:09 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:50:09 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:50:09 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:50:09 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:50:09 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:50:09 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:50:09 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:50:09 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/nodes" for 127.0.0.1 at 2012-11-27 17:50:09 -0800
+Processing by NodesController#index as HTML
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" 
+  Rendered nodes/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 17:50:10 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 17:50:10 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 17:50:10 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 17:50:10 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 17:50:10 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 17:50:10 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 17:50:10 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 17:50:10 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 17:50:10 -0800
+Served asset /application.js - 200 OK (0ms)
