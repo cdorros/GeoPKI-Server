@@ -1,0 +1,23 @@
+class ChangeDataTypeForNodeRelations < ActiveRecord::Migration
+  def self.up
+#    change_table :nodes do |t|
+#      t.change :parent, :binary
+#      t.change :l_child, :binary
+#      t.change :r_child, :binary
+#    end
+    change_column :nodes, :parent, :binary
+    change_column :nodes, :l_child, :binary
+    change_column :nodes, :r_child, :binary
+  end
+
+  def self.down
+    #change_table :nodes do |t|
+    #  t.change :parent, :integer
+    #  t.change :l_child, :integer
+    #  t.change :r_child, :integer
+    #end
+    change_column :nodes, :parent, :integer
+    change_column :nodes, :l_child, :integer
+    change_column :nodes, :r_child, :integer
+  end
+end
