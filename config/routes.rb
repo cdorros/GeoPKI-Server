@@ -4,6 +4,7 @@ Gpki::Application.routes.draw do
 
   resources :leafs
 
+  match '/geopki' => 'geopki#lookup'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

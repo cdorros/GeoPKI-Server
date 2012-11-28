@@ -7,6 +7,27 @@ class Node < ActiveRecord::Base
   	return Node.find_by_parent(nil)
   end
 
+  # gets intermediate nodes and root needed for hash verification
+  # and formats in an array. [node_to_verify.sibling, node_to_verify.sibling_isRight?, ...etc..., root]
+  def get_values_for_verification
+  	@intermediate_nodes = self.get_intermediate_nodes
+    @array = []
+
+    @intermediate_nodes.each do |node|
+      @array << node.sha.to_s
+      if node.is_right_child
+        @array << "rchild"
+      else
+        @array << "lchild"
+      end
+    end
+
+  	@array << Node.get_root_node.sha.to_s
+    @array << "root"
+
+  	return @array
+    #return @intermediate_nodes
+  end
 
   def get_intermediate_nodes
   	@current_node = self
@@ -39,12 +60,12 @@ class Node < ActiveRecord::Base
   	elsif !(self.is_right_child)
   		# get the right child if this node is a left child
   		begin
-  			@sibling = Node.find_by_id(self.parent).r_child
+  			@sibling = Node.find_by_id(Node.find_by_id(self.parent).r_child)
   		rescue
   		end
   	else
   		# get the left child if this node is a right child
-  		@sibling = Node.find_by_id(self.parent).l_child
+  		@sibling = Node.find_by_id(Node.find_by_id(self.parent).l_child)
   	end
   	
   	return @sibling
@@ -57,7 +78,8 @@ class Node < ActiveRecord::Base
   	# pull in all the leaves and hash them
   	Leaf.all.each do |leaf|
   		@node = Node.new
-  		@node.sha = Digest::SHA1.file(leaf.certificate.path).hexdigest
+  		#@node.sha = Digest::SHA1.file(leaf.certificate.path).hexdigest
+      @node.sha = leaf.sha
   		@node.level = 0
   		@node.save
   	end

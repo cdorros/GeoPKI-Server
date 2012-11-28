@@ -1,3 +1,5 @@
+require 'Digest'
+
 class LeafsController < ApplicationController
   # GET /leafs
   # GET /leafs.json
@@ -35,18 +37,23 @@ class LeafsController < ApplicationController
   # GET /leafs/1/edit
   def edit
     @leaf = Leaf.find(params[:id])
-
-    # update the MHT
-    Node.generate_tree
   end
 
   # POST /leafs
   # POST /leafs.json
   def create
     @leaf = Leaf.new(params[:leaf])
-  	
+
     respond_to do |format|
       if @leaf.save
+        
+        # hash certificate
+        begin   
+          @leaf.sha = Digest::SHA1.file(@leaf.certificate.path).hexdigest
+        rescue
+        end
+        @leaf.save
+
         format.html { redirect_to @leaf, notice: 'Leaf was successfully created.' }
         format.json { render json: @leaf, status: :created, location: @leaf }
 
@@ -63,6 +70,12 @@ class LeafsController < ApplicationController
   # PUT /leafs/1.json
   def update
     @leaf = Leaf.find(params[:id])
+
+    # hash certificate
+    begin   
+      @leaf.sha = Digest::SHA1.file(@leaf.certificate.path).hexdigest
+    rescue
+    end
 
     respond_to do |format|
       if @leaf.update_attributes(params[:leaf])

@@ -13,7 +13,7 @@ class Leaf < ActiveRecord::Base
 
   # add verification here that lon0 < lon1, etc
 
-  def find_by_coordinates(lat, lon, alt)
+  def self.find_by_coordinates(lat, lon, alt)
   	
   	# convert longitude all positive format
   	if lon < 0
