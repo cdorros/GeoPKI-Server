@@ -31,9 +31,9 @@ ActiveRecord::Schema.define(:version => 20121127041919) do
   end
 
   create_table "nodes", :force => true do |t|
-    t.binary   "parent"
-    t.binary   "l_child"
-    t.binary   "r_child"
+    t.integer  "parent"
+    t.integer  "l_child"
+    t.integer  "r_child"
     t.binary   "sha"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
