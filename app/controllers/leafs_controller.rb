@@ -1,4 +1,4 @@
-require 'Digest'
+require 'digest'
 
 class LeafsController < ApplicationController
   # GET /leafs

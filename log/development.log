@@ -27143,3 +27143,12 @@ Served asset /nodes.js - 200 OK (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 20:18:24 -0800
 Served asset /application.js - 200 OK (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (3.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateLeafs (20121120022820)
+Migrating to CreateNodes (20121120043859)
+Migrating to AddLevelToNode (20121126005032)
+Migrating to AddCertificateToLeaf (20121127020813)
+Migrating to ModifyCoordinatesOfLeafs (20121127041919)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
