@@ -6,11 +6,18 @@ This is an implementation of the GeoPKI system log and hash tree server.
 GeoPKI publication: https://sparrow.ece.cmu.edu/group/pub/kim_gligor_perrig_GeoPKI.pdf
 
 
-Notes:
--Merkle hash tree is updated automatically when leaves are created, modified, or destroyed
--Leafs are the actual entities that are part of the MHT. They can be viewed at /leafs
--Nodes are the hash values in the tree. They can be viewed at /nodes. These should not be edited or modified, as they are automatically generated.
--The API for the GeoPKI server is as follows:
+<h3>Notes</h3>
+<ul>
+<li>Merkle hash tree is updated automatically when leaves are created, modified, or destroyed</li>
+
+<li>Leafs are the actual entities that are part of the MHT. They can be viewed at /leafs</li>
+
+<li>Nodes are the hash values in the tree. They can be viewed at /nodes. These should not be edited or modified, as they are automatically generated.</li>
+</ul>
+
+<h3>API</h3>
+The API for the GeoPKI server is as follows:
+
 http://serverurl/geopki?lat=123.1&lon=123.1&alt=123.1
 where "123.1" is just a dummy value.
 
