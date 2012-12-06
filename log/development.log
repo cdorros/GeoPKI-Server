@@ -28145,3 +28145,47 @@ Served asset /nodes.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-05 18:27:09 -0800
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/leafs/" for 127.0.0.1 at 2012-12-05 18:31:10 -0800
+Connecting to database specified by database.yml
+Processing by LeafsController#index as HTML
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  Rendered leafs/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 177ms (Views: 99.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-05 18:31:11 -0800
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-12-05 18:31:11 -0800
+Served asset /leafs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-12-05 18:31:11 -0800
+Served asset /nodes.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-05 18:31:11 -0800
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-05 18:31:11 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-05 18:31:11 -0800
+Served asset /jquery.js - 304 Not Modified (34ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-12-05 18:31:11 -0800
+Served asset /leafs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-12-05 18:31:11 -0800
+Served asset /nodes.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-05 18:31:11 -0800
+Served asset /application.js - 304 Not Modified (9ms)
