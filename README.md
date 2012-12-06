@@ -2,6 +2,7 @@ GeoPKI-Server
 =============
 
 This is an implementation of the GeoPKI system log and hash tree server.
+A running test implementation is at: http://geopki.herokuapp.com/
 
 GeoPKI publication: https://sparrow.ece.cmu.edu/group/pub/kim_gligor_perrig_GeoPKI.pdf
 
