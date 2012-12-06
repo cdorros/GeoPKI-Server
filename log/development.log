@@ -27152,3 +27152,996 @@ Migrating to AddCertificateToLeaf (20121127020813)
 Migrating to ModifyCoordinatesOfLeafs (20121127041919)
   [1m[35m (0.1ms)[0m  select sqlite_version(*)
   [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/nodes" for 127.0.0.1 at 2012-11-27 20:37:24 -0800
+Connecting to database specified by database.yml
+Processing by NodesController#index as HTML
+  [1m[36mNode Load (0.6ms)[0m  [1mSELECT "nodes".* FROM "nodes" [0m
+  Rendered nodes/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 279ms (Views: 173.7ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /application.css - 200 OK (25ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /leafs.css - 200 OK (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /scaffolds.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /jquery.js - 200 OK (6ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /nodes.css - 200 OK (40ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /leafs.js - 200 OK (3ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /nodes.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /application.js - 200 OK (16ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Processing by LeafsController#index as HTML
+  [1m[35mLeaf Load (0.8ms)[0m  SELECT "leafs".* FROM "leafs" 
+  Rendered leafs/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 50ms (Views: 17.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:25 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs/2/edit" for 127.0.0.1 at 2012-11-27 20:37:28 -0800
+Processing by LeafsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLeaf Load (0.3ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered leafs/_form.html.erb (21.6ms)
+  Rendered leafs/edit.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 45ms (Views: 41.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:29 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:29 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:29 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:29 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:29 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:29 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:29 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:29 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:29 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started PUT "/leafs/2" for 127.0.0.1 at 2012-11-27 20:37:33 -0800
+Processing by LeafsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NA3azxQOW5Mo5vPueE/rGSNW48RHFw7c2vJM4A7hgeQ=", "leaf"=>{"name"=>"asdf", "lat0"=>"3.0", "lat1"=>"23.0", "lon0"=>"24.0", "lon1"=>"24.0", "alt0"=>"245.0", "alt1"=>"25.0", "certificate"=>#<ActionDispatch::Http::UploadedFile:0x007fceea826e30 @original_filename="www.pnc.com", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"leaf[certificate]\"; filename=\"www.pnc.com\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/21/bjhxjb7x4tq1v9h46tfrp8b40000gn/T/RackMultipart20121127-23391-kds7ju>>}, "commit"=>"Update Leaf", "id"=>"2"}
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.2ms)[0m  UPDATE "leafs" SET "certificate_file_name" = 'www.pnc.com', "certificate_file_size" = 1565, "certificate_updated_at" = '2012-11-28 04:37:33.176980', "updated_at" = '2012-11-28 04:37:33.180789' WHERE "leafs"."id" = 2
+[paperclip] Saving attachments.
+[paperclip] deleting /Users/cdorros/Dropbox/CMU/COURSES/Fall2012/Netsec/Project/dev/GeoPKI-Server/public/system/leafs/certificates/000/000/002/original/www.bankofamerica.com
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" 
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "nodes" WHERE "nodes"."id" = ?  [["id", 2]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "nodes" WHERE "nodes"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "nodes" WHERE "nodes"."id" = ?  [["id", 4]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mLeaf Load (0.3ms)[0m  SELECT "leafs".* FROM "leafs" 
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 28 Nov 2012 04:37:33 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "d5d894b3c75dc65a37aee2ed5988844357f0d138"], ["updated_at", Wed, 28 Nov 2012 04:37:33 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 28 Nov 2012 04:37:33 UTC +00:00], ["is_right_child", nil], ["l_child", nil], ["level", 0], ["parent", nil], ["r_child", nil], ["sha", "0b045217193b5a9c6a6a0d6d31d15b4de1a79634"], ["updated_at", Wed, 28 Nov 2012 04:37:33 UTC +00:00]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "nodes" ("created_at", "is_right_child", "l_child", "level", "parent", "r_child", "sha", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 28 Nov 2012 04:37:33 UTC +00:00], ["is_right_child", nil], ["l_child", 6], ["level", 1], ["parent", nil], ["r_child", 5], ["sha", nil], ["updated_at", Wed, 28 Nov 2012 04:37:33 UTC +00:00]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 0[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 6 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "nodes" SET "parent" = 7, "is_right_child" = 'f', "updated_at" = '2012-11-28 04:37:33.268211' WHERE "nodes"."id" = 6
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" WHERE "nodes"."id" = 5 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "nodes" SET "parent" = 7, "is_right_child" = 't', "updated_at" = '2012-11-28 04:37:33.276900' WHERE "nodes"."id" = 5
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mUPDATE "nodes" SET "sha" = x'37663139303062643532613432353361313464643831383163363566623939623164623834356239', "updated_at" = '2012-11-28 04:37:33.287243' WHERE "nodes"."id" = 7[0m
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" WHERE "nodes"."level" = 1[0m
+Redirected to http://0.0.0.0:3000/leafs/2
+Completed 302 Found in 138ms (ActiveRecord: 27.5ms)
+
+
+Started GET "/leafs/2" for 127.0.0.1 at 2012-11-27 20:37:33 -0800
+Processing by LeafsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered leafs/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:33 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:33 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:33 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:33 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:33 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:33 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:33 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:33 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:33 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs/2" for 127.0.0.1 at 2012-11-27 20:37:34 -0800
+Processing by LeafsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" WHERE "leafs"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered leafs/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:34 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:34 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:34 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:34 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:34 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:34 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:34 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:34 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:34 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Processing by LeafsController#index as HTML
+  [1m[35mLeaf Load (0.5ms)[0m  SELECT "leafs".* FROM "leafs" 
+  Rendered leafs/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/leafs" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Processing by LeafsController#index as HTML
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  Rendered leafs/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:35 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/nodes" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Processing by NodesController#index as HTML
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" 
+  Rendered nodes/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/nodes" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Processing by NodesController#index as HTML
+  [1m[36mNode Load (0.3ms)[0m  [1mSELECT "nodes".* FROM "nodes" [0m
+  Rendered nodes/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /leafs.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /nodes.css - 200 OK (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /leafs.js - 200 OK (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /nodes.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-27 20:37:37 -0800
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-12-05 18:25:13 -0800
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (29ms)
+
+
+Started GET "/ndoes" for 127.0.0.1 at 2012-12-05 18:25:17 -0800
+
+ActionController::RoutingError (No route matches [GET] "/ndoes"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/cdorros/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/cdorros/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/cdorros/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/cdorros/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.3ms)
+
+
+Started GET "/nodes/" for 127.0.0.1 at 2012-12-05 18:25:20 -0800
+Processing by NodesController#index as HTML
+  [1m[36mNode Load (0.7ms)[0m  [1mSELECT "nodes".* FROM "nodes" [0m
+  Rendered nodes/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 130ms (Views: 77.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-05 18:25:20 -0800
+Served asset /application.css - 200 OK (44ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-12-05 18:25:20 -0800
+Served asset /leafs.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-05 18:25:20 -0800
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-12-05 18:25:20 -0800
+Served asset /nodes.css - 200 OK (2ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-12-05 18:25:20 -0800
+Served asset /nodes.js - 200 OK (2ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-12-05 18:25:20 -0800
+Served asset /leafs.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-05 18:25:20 -0800
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-05 18:25:20 -0800
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-05 18:25:20 -0800
+Served asset /application.js - 200 OK (49ms)
+
+
+Started GET "/leafs/" for 127.0.0.1 at 2012-12-05 18:25:31 -0800
+Processing by LeafsController#index as HTML
+  [1m[35mLeaf Load (0.8ms)[0m  SELECT "leafs".* FROM "leafs" 
+  Rendered leafs/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 39ms (Views: 15.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-05 18:25:31 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-12-05 18:25:31 -0800
+Served asset /leafs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-12-05 18:25:31 -0800
+Served asset /nodes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-05 18:25:31 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-05 18:25:31 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-05 18:25:31 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-12-05 18:25:31 -0800
+Served asset /leafs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-12-05 18:25:31 -0800
+Served asset /nodes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-05 18:25:31 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/leafs/" for 127.0.0.1 at 2012-12-05 18:26:04 -0800
+Processing by LeafsController#index as HTML
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  Rendered leafs/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:04 -0800
+Served asset /leafs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:04 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:04 -0800
+Served asset /nodes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:04 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:04 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:04 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:04 -0800
+Served asset /leafs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:04 -0800
+Served asset /nodes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:04 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/nodes/" for 127.0.0.1 at 2012-12-05 18:26:09 -0800
+Processing by NodesController#index as HTML
+  [1m[35mNode Load (0.3ms)[0m  SELECT "nodes".* FROM "nodes" 
+  Rendered nodes/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:09 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:09 -0800
+Served asset /leafs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:09 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:09 -0800
+Served asset /nodes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:09 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:09 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:09 -0800
+Served asset /leafs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:09 -0800
+Served asset /nodes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:09 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/nodes/" for 127.0.0.1 at 2012-12-05 18:26:35 -0800
+Processing by NodesController#index as HTML
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" [0m
+  Rendered nodes/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:35 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:35 -0800
+Served asset /leafs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:35 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:35 -0800
+Served asset /nodes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:35 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:35 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:35 -0800
+Served asset /nodes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:35 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:35 -0800
+Served asset /leafs.js - 304 Not Modified (0ms)
+
+
+Started GET "/nodes/" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Processing by NodesController#index as HTML
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" 
+  Rendered nodes/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /leafs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /nodes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /leafs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /nodes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/nodes/" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Processing by NodesController#index as HTML
+  [1m[36mNode Load (0.2ms)[0m  [1mSELECT "nodes".* FROM "nodes" [0m
+  Rendered nodes/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /leafs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /nodes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /leafs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /nodes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:37 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/leafs/" for 127.0.0.1 at 2012-12-05 18:26:51 -0800
+Processing by LeafsController#index as HTML
+  [1m[35mLeaf Load (0.2ms)[0m  SELECT "leafs".* FROM "leafs" 
+  Rendered leafs/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:51 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:51 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:51 -0800
+Served asset /leafs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:51 -0800
+Served asset /nodes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:51 -0800
+Served asset /leafs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:51 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:51 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:51 -0800
+Served asset /nodes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:51 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/leafs/new" for 127.0.0.1 at 2012-12-05 18:26:55 -0800
+Processing by LeafsController#new as HTML
+  Rendered leafs/_form.html.erb (21.1ms)
+  Rendered leafs/new.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:55 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:55 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:55 -0800
+Served asset /leafs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:55 -0800
+Served asset /nodes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:55 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:55 -0800
+Served asset /leafs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:55 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:55 -0800
+Served asset /nodes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:55 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/leafs" for 127.0.0.1 at 2012-12-05 18:26:57 -0800
+Processing by LeafsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AD1QHaiynFIhc6ELaOPtN13MPdokltFyOEIgfY05Dlo=", "leaf"=>{"name"=>"adsfadsf", "lat0"=>"", "lat1"=>"", "lon0"=>"", "lon1"=>"", "alt0"=>"", "alt1"=>""}, "commit"=>"Create Leaf"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered leafs/_form.html.erb (58.2ms)
+  Rendered leafs/new.html.erb within layouts/application (59.6ms)
+Completed 200 OK in 79ms (Views: 68.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:57 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:57 -0800
+Served asset /leafs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:57 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-12-05 18:26:57 -0800
+Served asset /nodes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:57 -0800
+Served asset /leafs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:57 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:57 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:57 -0800
+Served asset /nodes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-05 18:26:57 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/leafs/" for 127.0.0.1 at 2012-12-05 18:27:06 -0800
+Processing by LeafsController#index as HTML
+  [1m[36mLeaf Load (0.2ms)[0m  [1mSELECT "leafs".* FROM "leafs" [0m
+  Rendered leafs/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-12-05 18:27:06 -0800
+Served asset /leafs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-05 18:27:06 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-12-05 18:27:06 -0800
+Served asset /nodes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-05 18:27:06 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-05 18:27:06 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-05 18:27:06 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-12-05 18:27:06 -0800
+Served asset /leafs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-12-05 18:27:06 -0800
+Served asset /nodes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-05 18:27:06 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/nodes/" for 127.0.0.1 at 2012-12-05 18:27:09 -0800
+Processing by NodesController#index as HTML
+  [1m[35mNode Load (0.2ms)[0m  SELECT "nodes".* FROM "nodes" 
+  Rendered nodes/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-05 18:27:09 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.css?body=1" for 127.0.0.1 at 2012-12-05 18:27:09 -0800
+Served asset /leafs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.css?body=1" for 127.0.0.1 at 2012-12-05 18:27:09 -0800
+Served asset /nodes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-05 18:27:09 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-05 18:27:09 -0800
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/leafs.js?body=1" for 127.0.0.1 at 2012-12-05 18:27:09 -0800
+Served asset /leafs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-05 18:27:09 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nodes.js?body=1" for 127.0.0.1 at 2012-12-05 18:27:09 -0800
+Served asset /nodes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-05 18:27:09 -0800
+Served asset /application.js - 304 Not Modified (0ms)
